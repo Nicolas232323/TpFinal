@@ -15,8 +15,30 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
+
         return View();
     }
+        public IActionResult MostrarLigas()
+    {
+
+     ViewBag.Ligas = BD.ListarLigas();
+     ViewBag.Ligas = BD.ListarLigas2();
+        return View("Ligas");
+    }
+        public IActionResult MostrarEquipos()
+    {
+     ViewBag.Equipos = BD.ListarEquipos()
+
+        return View("Equipos");
+    }
+        public IActionResult MostrarEquipo(int IdEquipo)
+    {
+    ViewBag.EquipoUni = BD.ListarEquipo(IdEquipo)
+
+        return View();
+    }
+    
 
     public IActionResult Privacy()
     {
