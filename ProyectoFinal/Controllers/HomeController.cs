@@ -28,13 +28,13 @@ public class HomeController : Controller
     }
         public IActionResult MostrarEquipos()
     {
-        ViewBag.Equipos = BD.ListarEquipos()
+        ViewBag.Equipos = BD.ListarEquipos();
 
         return View("Equipos");
     }
         public IActionResult MostrarEquipo(int IdEquipo)
     {
-    ViewBag.EquipoUni = BD.ListarEquipo(IdEquipo)
+    ViewBag.EquipoUni = BD.ListarEquipo(IdEquipo);
 
         return View();
     }
