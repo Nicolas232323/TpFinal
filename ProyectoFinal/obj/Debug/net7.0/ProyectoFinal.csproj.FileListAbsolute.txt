@@ -1,0 +1,8 @@
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfo.cs
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cache
+C:\Users\47492509\Documents\aaa\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cs
