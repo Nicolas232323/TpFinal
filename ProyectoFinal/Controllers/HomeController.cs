@@ -28,7 +28,7 @@ public class HomeController : Controller
     }
         public IActionResult MostrarEquipos()
     {
-     ViewBag.Equipos = BD.ListarEquipos()
+        ViewBag.Equipos = BD.ListarEquipos()
 
         return View("Equipos");
     }
