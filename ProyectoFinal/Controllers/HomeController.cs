@@ -23,9 +23,9 @@ public class HomeController : Controller
 
      public IActionResult Index()
     {
-        ViewBag.torneos = BD.Torneos.ToList();
-        ViewBag.goleadores = BD.Goleadores.ToList();
-        ViewBag.asistidores = BD.Asistidores.ToList();
+        ViewBag.torneos = BD.Torneos();
+        ViewBag.goleadores = BD.Goleadores();
+        ViewBag.asistidores = BD.Asistidores();
 
         return View();
     }
