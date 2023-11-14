@@ -25,9 +25,9 @@ public class HomeController : Controller
 
     ViewBag.EquipoUni = BD.ListarEquipo(IdEquipo);
 
-        ViewBag.torneos = BD.Torneos.ToList();
-        ViewBag.goleadores = BD.Goleadores.ToList();
-        ViewBag.asistidores = BD.Asistidores.ToList();
+        ViewBag.torneos = BD.Torneos();
+        ViewBag.goleadores = BD.Goleadores();
+        ViewBag.asistidores = BD.Asistidores();
 
 
         return View();
@@ -44,7 +44,7 @@ public class HomeController : Controller
         ViewBag.equipo = BD.Equipo(id);
         
 
-        ViewBag.arqueros = BD.Jugador();
+        ViewBag.arqueros = jugador.Jugador();
         ViewBag.defensores = BD.Jugador();
         ViewBag.mediocampistas = BD.Jugador();
         ViewBag.delanteros = BD.Jugador();

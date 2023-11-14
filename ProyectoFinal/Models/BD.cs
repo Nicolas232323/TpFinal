@@ -31,4 +31,46 @@ public static class BD
                 _listadoEquipos = db.Query<equipo>(sql).ToList();
         }
     }
+
+
+    static List<Fixture1> _Fixture1 = new List<Fixture1>();
+    public static void ObtenerFixture1()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string SQL = "Select * from Fixture";
+
+            return DB.Query<Fixture1>(SQL).ToList();
+        }
+    }
+
+    static List<Fixture2> _Fixture2 = new List<Fixture1>();
+    public static void ObtenerFixture2()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string SQL = "Select * from Fixture2";
+
+            return DB.Query<Fixture2>(SQL).ToList();
+        }
+    }
+
+     public static bool AgregarUsuario(Usuario us)
+    {
+        Usuario encontrado = null;
+        string SQL = "INSERT INTO Usuarios(NombreUsuario, Password, Nombre, Email, Telefono, IdPregunta, Respuesta) VALUES (@pNombreUsuario, HASHBYTES('MD5',@pPassword), @pNombre, @pEmail, @pTelefono, @pIdPregunta, @pRespuesta)";
+        string SQL2 = "SELECT * FROM Usuarios WHERE NombreUsuario = @pNombreUsuario OR Email = @pEmail";
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            encontrado = db.QueryFirstOrDefault<Usuario>(SQL2, new{ pNombreUsuario = us.NombreUsuario, pEmail = us.Email });
+            if (encontrado != null)
+            {
+                return false;
+            }
+            else
+            {
+                db.Execute(SQL, new { pNombreUsuario = us.NombreUsuario, pPassword = us.Password, pNombre = us.Nombre, pEmail = us.Email, pTelefono = us.Telefono, pIdPregunta = us.IdPregunta, pRespuesta = us.Respuesta });
+                return true;
+            }
+        }
 }
