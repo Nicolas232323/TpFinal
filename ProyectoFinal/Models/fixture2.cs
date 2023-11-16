@@ -1,4 +1,5 @@
-public class fixture2
+/*
+public class fixture2 
 {
     public int IdFixture2{get;set;}
     public int equipo_local2{get;set;}
@@ -23,3 +24,4 @@ public class fixture2
         Fkeqp2= Fkequipo2;
     }
 }
+*/

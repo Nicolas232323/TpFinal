@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
+    "C:\\Users\\49262208\\Documents\\adada\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "C:\\Users\\49262208\\Documents\\adada\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\49262208\\Documents\\adada\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\47492509\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\obj\\",
+        "projectPath": "C:\\Users\\49262208\\Documents\\adada\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\49262208\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\49262208\\Documents\\adada\\TpFinal\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47492509\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\49262208\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.15, )"
+              "version": "[2.1.21, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

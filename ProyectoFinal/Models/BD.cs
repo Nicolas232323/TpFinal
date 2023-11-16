@@ -6,22 +6,28 @@ public static class BD
 {
     private static string _connectionString = @"Server=Localhost;DataBase=;Trusted_Connection=True;";
     
-    static List<equipo> _listadoEquipos = new List<equipo>();
-    public static void ObtenerEquiposTablaLiga()
+  static List<equipo> _listadoEquipos = new List<equipo>();
+
+public static List<equipo> ObtenerEquiposTablaLiga()
+{
+    using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-                string sql = "SELECT imagenEquipo, nombreEquipo, Id_equipo, partidosJugados, puntos, partidosGanados, partidosEmpatados, partidosPerdidos, diferenciaGoles FROM Equipo";
-                _listadoEquipos = db.Query<equipo>(sql).ToList();
-        }
+        string sql = "SELECT * FROM equipo";
+        _listadoEquipos = db.Query<equipo>(sql).ToList();
     }
-    public static void ObtenerEquiposPorId(int Id_equipo)
+
+    return _listadoEquipos; 
+}
+
+
+    public static List<equipo> ObtenerEquiposPorId(int Id_equipo)
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-                string sql = "SELECT imagenEquipo, nombreEquipo, fechaFundacion, localidadClub, estadio FROM Equipo";
+                string sql = "SELECT * FROM equipo";
                 _listadoEquipos = db.Query<equipo>(sql).ToList();
         }
+        return _listadoEquipos;
     }
     public static void ObtenerJugadores()
     {
@@ -31,8 +37,9 @@ public static class BD
                 _listadoEquipos = db.Query<equipo>(sql).ToList();
         }
     }
+}
 
-
+/*
     static List<Fixture1> _Fixture1 = new List<Fixture1>();
     public static void ObtenerFixture1()
     {
@@ -74,3 +81,10 @@ public static class BD
             }
         }
 }
+
+    internal static dynamic ObtenerEquiposPorId(object id_equipo)
+    {
+        throw new NotImplementedException();
+    }
+}
+*/

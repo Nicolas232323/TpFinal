@@ -8,6 +8,8 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
+    public int Id_equipo { get; private set; }
+
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
@@ -19,15 +21,9 @@ public class HomeController : Controller
      public IActionResult Index()
     {
 
-        ViewBag.torneos = BD.Torneos();
-        ViewBag.goleadores = BD.Goleadores();
-        ViewBag.asistidores = BD.Asistidores();
-
-    ViewBag.EquipoUni = BD.ListarEquipo(IdEquipo);
-
-        ViewBag.torneos = BD.Torneos();
-        ViewBag.goleadores = BD.Goleadores();
-        ViewBag.asistidores = BD.Asistidores();
+        ViewBag.torneos = BD.ObtenerEquiposTablaLiga();
+     //   ViewBag.goleadores = BD.Goleadores();
+     //  ViewBag.asistidores = BD.Asistidores();
 
 
         return View();
@@ -35,32 +31,32 @@ public class HomeController : Controller
     
         public IActionResult MostrarEquipos()
     {
-         ViewBag.Equipos = BD.ListarEquipos();
+         ViewBag.Equipos = BD.ObtenerEquiposPorId(Id_equipo);
 
          return View("Equipos");
     }
-  public IActionResult Detalle(int id)
-    {
-        ViewBag.equipo = BD.Equipo(id);
+  //public IActionResult Detalle(int id)
+    //{
+      //  ViewBag.equipo = BD.Equipo(id);
         
 
-        ViewBag.arqueros = jugador.Jugador();
-        ViewBag.defensores = BD.Jugador();
-        ViewBag.mediocampistas = BD.Jugador();
-        ViewBag.delanteros = BD.Jugador();
+        //ViewBag.arqueros = jugador.Jugador();
+        //ViewBag.defensores = BD.Jugador();
+        //ViewBag.mediocampistas = BD.Jugador();
+        //ViewBag.delanteros = BD.Jugador();
 
      
 
-        return View("Equipo");
-    }
+    //    return View("Equipo");
+    //}
     
-        public IActionResult TablasCopa()
-    {
+    //    public IActionResult TablasCopa()
+ //   {
       
-        ViewBag.equipos = BD.Equipos(); 
-        ViewBag.ultimosCampeones = BD.Campeonatos();
-        return View(Tablas);
-    }
+     //  ViewBag.equipos = BD.Equipos(); 
+    //    ViewBag.ultimosCampeones = BD.Campeonatos();
+      //  return View(Tablas);
+   // }
 
     public IActionResult Privacy()
     {
