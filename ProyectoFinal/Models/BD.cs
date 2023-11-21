@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using Dapper;
-
+namespace ProyectoFinal.Models;
 public static class BD
 {
-    private static string _connectionString = @"Server=Localhost;DataBase=;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=.;DataBase=TpFinal;Trusted_Connection=True;";
     
   static List<equipo> _listadoEquipos = new List<equipo>();
 
