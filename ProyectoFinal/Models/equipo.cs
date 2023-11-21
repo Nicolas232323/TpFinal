@@ -9,9 +9,6 @@ public class equipo
     public int partidosEmpatados{get;set;}
     public int partidosPerdidos{get;set;}
     public int diferenciaGoles{get;set;}
-    public DateTime fechaFundacion{get;set;}
-    public string localidadClub{get;set;}
-    public string estadio{get;set;}
 
     public equipo()
     {
