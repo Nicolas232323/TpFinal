@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JR+5FivpGMlqtk6fMlvxKn54ZgsT0dcmK/1fSWNAcCYXYYWmZYMUK02g/bxvECYIldcwlM6lMk7HzqT3Eng8Lw==",
+  "dgSpecHash": "/3LBPA5EoVu8sHsQvua+KuZXbQ44PgbI0J5kfpoQn5bzLX0GNq72piA/AsudKi7gZnxkdoSUgcUTKq6NCEyn7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47492509\\Documents\\nuevo\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+  "projectFilePath": "c:\\Users\\47492509\\Documents\\nuevo\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47492509\\.nuget\\packages\\dapper\\2.1.21\\dapper.2.1.21.nupkg.sha512",
     "C:\\Users\\47492509\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
@@ -15,5 +15,12 @@
     "C:\\Users\\47492509\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\47492509\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché c:\\Users\\47492509\\Documents\\nuevo\\TpFinal\\ProyectoFinal\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
