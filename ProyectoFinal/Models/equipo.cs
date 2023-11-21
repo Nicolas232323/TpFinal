@@ -1,3 +1,4 @@
+namespace ProyectoFinal.Models;
 public class equipo
 {
     public string imagenEquipo{get;set;}
