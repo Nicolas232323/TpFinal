@@ -1,41 +1,34 @@
-﻿
-    <header>
+﻿ <header>
         <button type="button" class="btn btn-primary">Ligas</button>
         <button type="button" class="btn btn-primary">Equipos</button>
     </header>
-    <div>
-        <table class="table">
+<table>
     <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Equipo</th>
-      <th scope="col">PTS</th>
-      <th scope="col">PJ</th>
-      <th scope="col">PG</th>
-      <th scope="col">PE</th>
-      <th scope="col">PP</th>
-      <th scope="col">GF</th>
-      <th scope="col">GC</th>
-      <th scope="col">DG</th>
-     </tr>
-   </thead>
-   <tbody>
-    <tr>
-      <th scope="row">1</th>
-    @foreach (var equipo in ViewBag.torneos)
+        <tr>
+            <th>#</th>
+            <th>Equipo</th>
+            <th>PTS</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th>DG</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (equipo item in ViewBag.torneos)
         {
-            <li>@equipo.nombreEquipo</li>
+            <tr>
+                <td>@item.IDequipo</td> 
+                <td>@item.Nombre_equipo</td> 
+                <td>@item.puntos_equipo</td> 
+                <td>@item.partido_jugados</td> 
+                <td>@item.partidos_ganados</td> 
+                <td>@item.partidos_empatados</td> 
+                <td>@item.partidos_perdidos</td> 
+                <td>@item.diferencia_de_gol</td> 
+                
+            </tr>
         }
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-    </tr>
-    <tr>
-      
-    </tr>
     </tbody>
-    </table>
-    </div>
-
-   
-    
+</table>

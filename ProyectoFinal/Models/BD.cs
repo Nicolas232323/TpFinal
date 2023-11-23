@@ -4,7 +4,7 @@ using Dapper;
 namespace ProyectoFinal.Models;
 public static class BD
 {
-    private static string _connectionString = @"Server=.;DataBase=TpFinal;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=DESKTOP-MMQE38N\SQLEXPRESS;DataBase=TpFinal;Trusted_Connection=True;";
     
   static List<equipo> _listadoEquipos = new List<equipo>();
 
@@ -12,7 +12,7 @@ public static List<equipo> ObtenerEquiposTablaLiga()
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT * FROM equipo";
+        string sql = "SELECT * FROM Equipo";
         _listadoEquipos = db.Query<equipo>(sql).ToList();
     }
 
