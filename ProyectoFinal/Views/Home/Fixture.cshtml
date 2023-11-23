@@ -1,0 +1,202 @@
+
+<body>
+  <div class="container">
+    <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 1" class="left-image">
+    <h1>FECHA 1 LIGA ARGENTINA</h1>
+    <h2>LA PAGINA DE FUTBOL</h2>
+    <img src="IMAGENES/png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
+    
+    <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 2" class="right-image">
+    <table summary="TODOS LOS PARTIDOS DE LA LIGA ARGENTINA">
+      <caption>
+        Todas las fechas de los partidos para que las puedas disfrutar y opinar
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Num Partido</th>
+          <th scope="col">Equipo Local</th>
+          <th scope="col">Equipo Visitante</th>
+          <th scope="col">Fecha Juego</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (fixture item in ViewBag.fixture1)
+          {
+              <tr>
+                  <td>@Fixture1.IdFixture</td>
+                  <td>@Fixture1.equipo_local</td>
+                  <td>@Fixture1.equipo_visitante</td>
+                  <td>@Fixture1.Hora_Partido | <td>@Fixture1.fecha_juego</td></td>
+              </tr>
+          }
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="2">Cantidad de partidos</th>
+          <td colspan="2">14</td>
+        </tr>
+      </tfoot>
+    </table>
+
+   
+  </div>
+</body>
+
+
+<style>
+
+body{
+  background-color: #429931;
+}
+
+h1{
+  text-align: center;
+  font-family: "helvetica neue";
+  font-weight:bold;
+  color: #a9ff08;
+}
+h2{
+  text-align: center;
+  font-family: "helvetica neue";
+  font-weight:bold;
+  color: #a9ff08;
+}
+h3{
+
+  text-align: center;
+  font-family: "helvetica neue";
+  font-weight:bold;
+  color: #a9ff08;
+}
+img{
+  width: 7%; 
+  height: auto;
+  display: block; 
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th,
+  td {
+    padding: 20px;
+  }
+  html {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+  }
+  
+  thead th,
+  tfoot th {
+    font-family: "Rock Salt", cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 3px;
+    font-size: 13px; 
+    font-weight: bold;
+    
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+
+  thead,
+tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border: 3px solid purple;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #429931;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #429931;
+  }
+  
+  tbody tr {
+    background-image: url(noise.png);
+  }
+  
+  table {
+    background-color: #429931;
+    width: 40%;
+    margin: auto;
+    
+  }
+  caption {
+    font-family: "Rock Salt", cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #000000;
+    font-weight: bold;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  .left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+
+
+
+</style>
+
