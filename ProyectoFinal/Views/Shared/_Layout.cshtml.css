@@ -63,3 +63,7 @@ button.accept-policy {
 {
   padding-left: 10px;
 }
+.imagenloca img {
+  width: 100px; 
+  height: auto;
+}
