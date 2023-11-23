@@ -46,3 +46,20 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+.logo-img {
+  width: 100px; 
+  height: auto; 
+}
+
+.botones
+{
+ padding-left: 220px;
+}
+.botligas
+{
+  padding-left: 990px;
+}
+.botequipos
+{
+  padding-left: 10px;
+}
