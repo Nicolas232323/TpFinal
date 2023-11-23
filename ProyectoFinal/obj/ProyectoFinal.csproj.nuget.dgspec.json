@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Favorites\\OneDrive\\Documentos\\TPFinal\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
+    "C:\\Users\\47492509\\Documents\\a\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "D:\\Favorites\\OneDrive\\Documentos\\TPFinal\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "C:\\Users\\47492509\\Documents\\a\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Favorites\\OneDrive\\Documentos\\TPFinal\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\47492509\\Documents\\a\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "D:\\Favorites\\OneDrive\\Documentos\\TPFinal\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
-        "outputPath": "D:\\Favorites\\OneDrive\\Documentos\\TPFinal\\TpFinal\\ProyectoFinal\\obj\\",
+        "projectPath": "C:\\Users\\47492509\\Documents\\a\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\47492509\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47492509\\Documents\\a\\TpFinal\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\47492509\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.21, )"
+              "version": "[2.1.24, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -66,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

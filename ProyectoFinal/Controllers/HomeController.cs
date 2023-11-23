@@ -22,8 +22,7 @@ public class HomeController : Controller
     {
 
         ViewBag.torneos = BD.ObtenerEquiposTablaLiga();
-     //   ViewBag.goleadores = BD.Goleadores();
-     //  ViewBag.asistidores = BD.Asistidores();
+    
 
 
         return View();
@@ -33,7 +32,7 @@ public class HomeController : Controller
     {
          ViewBag.Equipos = BD.ObtenerEquiposPorId(Id_equipo);
 
-         return View("Equipos");
+         return View("equipos");
     }
   //public IActionResult Detalle(int id)
     //{
