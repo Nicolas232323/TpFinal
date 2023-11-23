@@ -37,3 +37,14 @@ C:\Users\47805665\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\refint\Proyecto
 C:\Users\47805665\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.pdb
 C:\Users\47805665\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\47805665\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\ref\ProyectoFinal.dll
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.AssemblyReference.cache
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfoInputs.cache
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfo.cs
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cache
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cs
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.dll
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\refint\ProyectoFinal.dll
+D:\Favorites\OneDrive\Documentos\TPFinal\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.pdb

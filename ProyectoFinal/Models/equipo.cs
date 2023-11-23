@@ -26,11 +26,5 @@ public class equipo
         partidosEmpatados = pE;
         partidosPerdidos = pP;
         diferenciaGoles = dG;
-<<<<<<< HEAD
-    //    fechaFundacion = fF;
-      //  localidadClub = lC;
-        //estadio = cancha;
-=======
->>>>>>> 6429d4ca43c2f3a852c7b4ae0f5ff14238d6e1e0
     }
 }
