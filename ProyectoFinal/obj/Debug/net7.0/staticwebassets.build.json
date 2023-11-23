@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6wSYZg5lsfCTElQpj6c66y9mM8aMnnGh6V3ikpZtonE=",
+  "Hash": "Nr55SXjb/3A6op4dgQshqPoHiVdct3nKgCxjqjFbZgQ=",
   "Source": "ProyectoFinal",
   "BasePath": "_content/ProyectoFinal",
   "Mode": "Default",
@@ -119,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\wwwroot\\img\\logo.jpeg",
+      "Identity": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\wwwroot\\img\\logo.png",
       "SourceId": "ProyectoFinal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\wwwroot\\",
       "BasePath": "_content/ProyectoFinal",
-      "RelativePath": "img/logo.jpeg",
+      "RelativePath": "img/logo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +133,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\logo.jpeg"
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\wwwroot\\img\\pasto.webp",
+      "SourceId": "ProyectoFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\wwwroot\\",
+      "BasePath": "_content/ProyectoFinal",
+      "RelativePath": "img/pasto.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\pasto.webp"
     },
     {
       "Identity": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\wwwroot\\js\\site.js",
