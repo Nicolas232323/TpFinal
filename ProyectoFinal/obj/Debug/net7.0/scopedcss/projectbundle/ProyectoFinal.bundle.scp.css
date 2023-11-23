@@ -47,3 +47,20 @@ button.accept-policy[b-ww5h623m21] {
   white-space: nowrap;
   line-height: 60px;
 }
+.logo-img[b-ww5h623m21] {
+  width: 100px; 
+  height: auto; 
+}
+
+.botones[b-ww5h623m21]
+{
+ padding-left: 220px;
+}
+.botligas[b-ww5h623m21]
+{
+  padding-left: 990px;
+}
+.botequipos[b-ww5h623m21]
+{
+  padding-left: 10px;
+}
