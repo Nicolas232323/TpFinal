@@ -511,11 +511,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\95240363\\Videos\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+      "projectUniqueName": "Z:\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
       "projectName": "ProyectoFinal",
-      "projectPath": "C:\\Users\\95240363\\Videos\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+      "projectPath": "Z:\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
       "packagesPath": "C:\\Users\\95240363\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\95240363\\Videos\\TpFinalProgra\\TpFinal\\ProyectoFinal\\obj\\",
+      "outputPath": "Z:\\TpFinalProgra\\TpFinal\\ProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

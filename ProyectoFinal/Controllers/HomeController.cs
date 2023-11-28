@@ -53,7 +53,8 @@ public class HomeController : Controller
 
          return View("equipo");
     }
-
+}
+/*
     public IActionResult AgarrarImagenesLocal()
     {
 
@@ -74,7 +75,7 @@ public class HomeController : Controller
     public IActionResult AgarrarImagenesLocal2()
     {
 
-        ViewBag.ImagenLocal2 = BD.ObtenerImagenesPorNombreLocal();
+        ViewBag.ImagenLocal2 = BD.ObtenerImagenesPorNombreLocal2();
     
         return View();
     }
@@ -82,7 +83,7 @@ public class HomeController : Controller
     public IActionResult AgarrarImagenesVisitante2()
     {
 
-        ViewBag.ImagenVisitante2 = BD.ObtenerImagenesPorNombreLocal();
+        ViewBag.ImagenVisitante2 = BD.ObtenerImagenesPorNombreVisitante2();
     
         return View();
     }
@@ -108,3 +109,4 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
+*/

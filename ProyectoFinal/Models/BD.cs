@@ -12,14 +12,14 @@ public static class BD
  static List<fixture> _listadoFixture = new List<fixture>(); 
  static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
 
- static List<imgeqpL> _listadoImagenesL = new List<imgeqpL>(); 
+ static List<string> _listadoImagenesL = new List<string>(); 
 
-  static List<imgeqpV> _listadoImagenesV = new List<imgeqpV>(); 
+  static List<string> _listadoImagenesV = new List<string>(); 
 
 
-   static List<imgeqpL2> _listadoImagenesL2 = new List<imgeqpL2>(); 
+   static List<string> _listadoImagenesL2 = new List<string>(); 
 
-  static List<imgeqpV2> _listadoImagenesV2 = new List<imgeqpV2>(); 
+  static List<string> _listadoImagenesV2 = new List<string>(); 
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -71,46 +71,47 @@ public static List<equipo> ObtenerEquiposTablaLiga()
         }
         return _listadoFixture2;
     }
-
-      public static List<imgeqpL> ObtenerImagenesPorNombreLocal()
+}
+/*
+      public static List<string> ObtenerImagenesPorNombreLocal()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
                 string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture ON equipo.IDequipo = Fixture.Fkequipo WHERE Fixture.equipo_local =equipo.Nombre_equipo ";
-                _listadoImagenesL = db.Query<imgeqpL>(sql).ToList();
+                _listadoImagenesL = db.Query<string>(sql).ToList();
         }
-        return _listadoImagenesLocal;
+        return _listadoImagenesL;
     }
 
-          public static List<imgeqpV> ObtenerImagenesPorNombreVisitante()
+          public static List<string> ObtenerImagenesPorNombreVisitante()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
                 string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture ON equipo.IDequipo = Fixture.Fkequipo WHERE Fixture.equipo_visitante =equipo.Nombre_equipo";
-                _listadoImagenesV = db.Query<imgeqpV>(sql).ToList();
+                _listadoImagenesV = db.Query<string>(sql).ToList();
         }
-        return _listadoImagenesVisitante;
+        return _listadoImagenesV;
     }
 
 
-    public static List<imgeqpL2> ObtenerImagenesPorNombreLocal2()
+    public static List<string> ObtenerImagenesPorNombreLocal2()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
                 string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture2 ON equipo.IDequipo = Fixture2.Fkequipo2 WHERE Fixture2.equipo_local2 =equipo.Nombre_equipo ";
-                _listadoImagenesL2 = db.Query<imgeqpL2>(sql).ToList();
+                _listadoImagenesL2 = db.Query<string>(sql).ToList();
         }
-        return _listadoImagenesLocal2;
+        return _listadoImagenesL2;
     }
 
-          public static List<imgeqpV2> ObtenerImagenesPorNombreVisitante2()
+          public static List<string> ObtenerImagenesPorNombreVisitante2()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
                 string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture2 ON equipo.IDequipo = Fixture2.Fkequipo2 WHERE Fixture2.equipo_visitante2 =equipo.Nombre_equipo ";
-                _listadoImagenesV2 = db.Query<imgeqpV2>(sql).ToList();
+                _listadoImagenesV2 = db.Query<string>(sql).ToList();
         }
-        return _listadoImagenesVisitante2;
+        return _listadoImagenesV2;
     }
 
 }
