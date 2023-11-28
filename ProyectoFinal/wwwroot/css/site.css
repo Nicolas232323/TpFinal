@@ -125,9 +125,7 @@ display: flex;
 
 }
 
-.Fixture{
-  background-color: #429931;
-}
+
 
 .H1Fixture{
   text-align: center;
@@ -223,19 +221,9 @@ tfoot td {
   border: 3px solid purple;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #429931;
-  }
+
   
-  tbody tr:nth-child(even) {
-    background-color: #429931;
-  }
-  
-  tbody tr {
-    background-image: url(noise.png);
-  }
-  
-  table {
+  .TablaFixture {
     background-color: #429931;
     width: 40%;
     margin: auto;
