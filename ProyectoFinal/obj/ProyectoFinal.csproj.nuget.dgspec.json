@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Programacion 2023\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
+    "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "Z:\\Programacion 2023\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Programacion 2023\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "Z:\\Programacion 2023\\TpFinalProgra\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\95240363\\.nuget\\packages\\",
-        "outputPath": "Z:\\Programacion 2023\\TpFinalProgra\\TpFinal\\ProyectoFinal\\obj\\",
+        "projectPath": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\47492509\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47492509\\Documents\\aaa\\TpFinal\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\95240363\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47492509\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
