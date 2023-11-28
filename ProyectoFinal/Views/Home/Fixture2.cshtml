@@ -4,19 +4,19 @@
 </head>
 <body class="Fixture" >
   <div class="container1">
-    <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 1" class="left-image1">
-    <h1 class="H1Fixture">FECHA 1 LIGA ARGENTINA</h1>
+    <img src="/AFA-removebg-preview.png" alt="Imagen 1" class="left-image">
+    <h1 class="H1Fixture">FECHA 2 LIGA ARGENTINA</h1>
     <h2>LA PAGINA DE FUTBOL</h2>
-    <img src="IMAGENES/png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
+    <img src="/png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
     
-    <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 2" class="right-image1">
-    <table summary="TODOS LOS PARTIDOS DE LA LIGA ARGENTINA">
+    <img src="/AFA-removebg-preview.png" alt="Imagen 2" class="right-image">
+    <table summary="TODOS LOS PARTIDOS DE LA LIGA ARGENTINA" class="TablaFixture">
       <caption>
         Todas las fechas de los partidos para que las puedas disfrutar y opinar
       </caption>
       <thead>
         <tr>
-          <th scope="col">Num Partido</th>
+          <th scope="col">Partido</th>
           <th scope="col">Equipo Local</th>
           <th scope="col">Equipo Visitante</th>
           <th scope="col">Fecha Juego</th>
@@ -24,16 +24,18 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        
           @foreach (fixture2 item in ViewBag.Fixture2)
         {
+          <tr>
         <td>@item.IdFixture2</td> 
         <td>@item.equipo_local2</td> 
         <td>@item.equipo_visitante2</td> 
         <td>@item.fecha_juego2, @item.Hira_Partido2</td>
+        </tr>
         }
         
-        </tr>
+        
       </tbody>
       <tfoot>
         <tr>

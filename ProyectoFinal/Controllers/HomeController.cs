@@ -54,6 +54,39 @@ public class HomeController : Controller
          return View("equipo");
     }
 
+    public IActionResult AgarrarImagenesLocal()
+    {
+
+        ViewBag.ImagenLocal = BD.ObtenerImagenesPorNombreLocal();
+    
+        return View();
+    }
+
+    public IActionResult AgarrarImagenesVisitante()
+    {
+
+        ViewBag.ImagenVisitante = BD.ObtenerImagenesPorNombreVisitante();
+    
+        return View();
+    }
+
+
+    public IActionResult AgarrarImagenesLocal2()
+    {
+
+        ViewBag.ImagenLocal2 = BD.ObtenerImagenesPorNombreLocal();
+    
+        return View();
+    }
+
+    public IActionResult AgarrarImagenesVisitante2()
+    {
+
+        ViewBag.ImagenVisitante2 = BD.ObtenerImagenesPorNombreLocal();
+    
+        return View();
+    }
+
 
     
     //    public IActionResult TablasCopa()

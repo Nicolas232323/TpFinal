@@ -4,8 +4,8 @@ public class fixture2
     public int IdFixture2{get;set;}
     public string equipo_local2{get;set;}
     public string equipo_visitante2{get;set;}
-    public DateTime  fecha_juego2{get;set;}
-    public DateTime  Hira_Partido2{get;set;}
+    public string  fecha_juego2{get;set;}
+    public string  Hira_Partido2{get;set;}
     public int Fkequipo2{get;set;}
     
     
@@ -14,7 +14,7 @@ public class fixture2
     {
 
     }
-    public fixture2(int idFix2, string Local2, string Visitante2, DateTime fechaJ2,DateTime HoraP2, int Fkeqp2)
+    public fixture2(int idFix2, string Local2, string Visitante2, string fechaJ2,string HoraP2, int Fkeqp2)
     {
         IdFixture2 = idFix2;
         equipo_local2 = Local2;

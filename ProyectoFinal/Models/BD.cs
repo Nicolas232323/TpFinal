@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using Dapper;
 namespace ProyectoFinal.Models;
+
 public static class BD
 {
     private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Trusted_Connection=True;";
@@ -10,6 +11,15 @@ public static class BD
  
  static List<fixture> _listadoFixture = new List<fixture>(); 
  static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
+
+ static List<imgeqpL> _listadoImagenesL = new List<imgeqpL>(); 
+
+  static List<imgeqpV> _listadoImagenesV = new List<imgeqpV>(); 
+
+
+   static List<imgeqpL2> _listadoImagenesL2 = new List<imgeqpL2>(); 
+
+  static List<imgeqpV2> _listadoImagenesV2 = new List<imgeqpV2>(); 
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -61,6 +71,48 @@ public static List<equipo> ObtenerEquiposTablaLiga()
         }
         return _listadoFixture2;
     }
+
+      public static List<imgeqpL> ObtenerImagenesPorNombreLocal()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture ON equipo.IDequipo = Fixture.Fkequipo WHERE Fixture.equipo_local =equipo.Nombre_equipo ";
+                _listadoImagenesL = db.Query<imgeqpL>(sql).ToList();
+        }
+        return _listadoImagenesLocal;
+    }
+
+          public static List<imgeqpV> ObtenerImagenesPorNombreVisitante()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture ON equipo.IDequipo = Fixture.Fkequipo WHERE Fixture.equipo_visitante =equipo.Nombre_equipo";
+                _listadoImagenesV = db.Query<imgeqpV>(sql).ToList();
+        }
+        return _listadoImagenesVisitante;
+    }
+
+
+    public static List<imgeqpL2> ObtenerImagenesPorNombreLocal2()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture2 ON equipo.IDequipo = Fixture2.Fkequipo2 WHERE Fixture2.equipo_local2 =equipo.Nombre_equipo ";
+                _listadoImagenesL2 = db.Query<imgeqpL2>(sql).ToList();
+        }
+        return _listadoImagenesLocal2;
+    }
+
+          public static List<imgeqpV2> ObtenerImagenesPorNombreVisitante2()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture2 ON equipo.IDequipo = Fixture2.Fkequipo2 WHERE Fixture2.equipo_visitante2 =equipo.Nombre_equipo ";
+                _listadoImagenesV2 = db.Query<imgeqpV2>(sql).ToList();
+        }
+        return _listadoImagenesVisitante2;
+    }
+
 }
 
 /*
