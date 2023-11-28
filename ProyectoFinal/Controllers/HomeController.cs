@@ -34,20 +34,15 @@ public class HomeController : Controller
 
          return View("equipos");
     }
-  //public IActionResult Detalle(int id)
-    //{
-      //  ViewBag.equipo = BD.Equipo(id);
-        
 
-        //ViewBag.arqueros = jugador.Jugador();
-        //ViewBag.defensores = BD.Jugador();
-        //ViewBag.mediocampistas = BD.Jugador();
-        //ViewBag.delanteros = BD.Jugador();
+      public IActionResult DetalleEquipo(int Id_equipo)
+    {
+         ViewBag.Equipos = BD.ObtenerJugadores();
 
-     
+         return View("equipo");
+    }
 
-    //    return View("Equipo");
-    //}
+
     
     //    public IActionResult TablasCopa()
  //   {
