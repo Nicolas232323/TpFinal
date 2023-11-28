@@ -9,6 +9,7 @@ public static class BD
   static List<equipo> _listadoEquipos = new List<equipo>();
  
  static List<fixture> _listadoFixture = new List<fixture>(); 
+ static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -49,6 +50,16 @@ public static List<equipo> ObtenerEquiposTablaLiga()
                 _listadoFixture = db.Query<fixture>(sql).ToList();
         }
         return _listadoFixture;
+    }
+
+    public static List<fixture2> ObtenerFixture2()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT * FROM Fixture2";
+                _listadoFixture2 = db.Query<fixture2>(sql).ToList();
+        }
+        return _listadoFixture2;
     }
 }
 

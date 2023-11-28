@@ -1,0 +1,53 @@
+<head>
+  <link rel="stylesheet" href="site.css">
+  
+</head>
+<body class="Fixture" >
+  <div class="container1">
+    <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 1" class="left-image1">
+    <h1 class="H1Fixture">FECHA 1 LIGA ARGENTINA</h1>
+    <h2>LA PAGINA DE FUTBOL</h2>
+    <img src="IMAGENES/png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
+    
+    <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 2" class="right-image1">
+    <table summary="TODOS LOS PARTIDOS DE LA LIGA ARGENTINA">
+      <caption>
+        Todas las fechas de los partidos para que las puedas disfrutar y opinar
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Num Partido</th>
+          <th scope="col">Equipo Local</th>
+          <th scope="col">Equipo Visitante</th>
+          <th scope="col">Fecha Juego</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        
+          @foreach (fixture item in ViewBag.Fixture1)
+        {
+          <tr>
+        <td>@item.IdFixture</td> 
+        <td>@item.equipo_local</td> 
+        <td>@item.equipo_visitante</td> 
+        <td>@item.fecha_juego, @item.Hora_Partido</td>
+        </tr>
+        
+        }
+        
+        
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="2">Cantidad de partidos</th>
+          <td colspan="2">14</td>
+        </tr>
+      </tfoot>
+    </table>
+
+   
+  </div>
+</body>
+
+

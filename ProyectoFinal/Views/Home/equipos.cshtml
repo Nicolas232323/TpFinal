@@ -5,18 +5,18 @@
     <div class="container">
 
 
-        <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 1" class="left-image">
+        <img src="AFA-removebg-preview.png" alt="Imagen 1" class="left-image">
         <h1>TODOS LOS EQUIPOS DE LA LIGA ARGENTINA!</h1>
-        <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 1" class="right-image">
+        <img src="AFA-removebg-preview.png" alt="Imagen 1" class="right-image">
 
 
-        <img src="IMAGENES/png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
+        <img src="png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
         
-        <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 2" class="right-image">
+      
     </div>
-
-
- @foreach (equipo item in ViewBag.Equipos)
+    <br>
+    <div class="equipo">
+     @foreach (equipo item in ViewBag.Equipos)
         {
     <div class="equipo">
         <a href='@Url.Action("DetalleEquipo")'>
@@ -26,17 +26,5 @@
       
         </div>     
         }
-      
-
-     
-
-    
-      
-      
-
-
-
-
-
 
 

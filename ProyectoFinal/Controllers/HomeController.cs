@@ -34,7 +34,19 @@ public class HomeController : Controller
 
          return View("equipos");
     }
+       public IActionResult MostrarFixture1()
+    {
+         ViewBag.Fixture1 = BD.ObtenerFixture1();
 
+         return View("Fixture1");
+    }
+
+      public IActionResult MostrarFixture2()
+    {
+         ViewBag.Fixture2 = BD.ObtenerFixture2();
+
+         return View("Fixture2");
+    }
       public IActionResult DetalleEquipo(int Id_equipo)
     {
          ViewBag.Equipos = BD.ObtenerJugadores();
