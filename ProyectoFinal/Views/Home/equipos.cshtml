@@ -1,142 +1,27 @@
-<head>
-    <link rel="stylesheet" href="site.css">
-</head>
 
-<body>
+<div class="equiposbg">
 <br>
-    <div class="container">
+     <div class="container">
         <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 1" class="left-image">
         <h1>TODOS LOS EQUIPOS DE LA LIGA ARGENTINA!</h1>
 
-<H1>Equipos</H1>
+        <img src="IMAGENES/png-transparent-football-open-graphics-ball-sports-equipment-sports-soccer-ball-removebg-preview.png" alt="">
+        
+        <img src="IMAGENES/AFA-removebg-preview.png" alt="Imagen 2" class="right-image">
+    </div>
+
 
  @foreach (equipo item in ViewBag.Equipos)
         {
         <div class="equipo">
-        <a href='@Url.Action("")'>
         <img src="@item.Image_equipo " alt="">
-        </a>
-       
         @item.Nombre_equipo
-        @item.Image_equipo   
+    
            
         }
       </div>
-
-     
-
-    
-      
-      
-</body>
-</html>
-
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #429931;
- 
-
- 
-  }
-  h1{
-    text-align:center;
-    font-family: fantasy;
-    color: white;
-  }
-
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-  }
-.container{   position: relative;}
-  .equipo {
-    width: 13%;
-    box-sizing: border-box;
-    float: left;
-    padding: 1em;
-    margin: 3%;
-    background-color: #80cfe7;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 150px;
-  }
-
-  .equipo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-
-  img{
-    width: 7%; 
-    height: auto;
-    display: block; 
-    margin: auto;
-    margin-bottom: 10px;
-  }
-
-  .equipo h2 {
-    margin-top: 0;
-  }
-
-  .equipo p {
-    color: #666;
-  }
-
-  .left-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10;
-  }
-  
-  .right-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 10;
-    left: 850;
-  }
-
-     .navbar{
-
-justify-content: center;
-align-items: center;
-display: flex;
+</div>
 
 
 
-   }
-   .grandeboton
-   {
-     width: 300px;
 
-     margin: 0 auto;
-
-     border-bottom-style: double;
-
-  
-  
-  
-  }
-  
-
-  @media (max-width: 768px) {
-    .equipo {
-      width: 48%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .equipo {
-      width: 100%;
-    }
-
-  }
-</style>

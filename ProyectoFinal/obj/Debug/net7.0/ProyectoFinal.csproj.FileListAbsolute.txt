@@ -1,0 +1,8 @@
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.AssemblyReference.cache
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfoInputs.cache
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfo.cs
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cache
+Z:\Programacion 2023\TpFinalProgra\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cs
