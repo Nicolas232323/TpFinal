@@ -16,7 +16,7 @@ public class fixture
     }
     public fixture(int idFix, string Fkequ,string equLoc,string equVis,DateTime FJuego,DateTime HPart)
     {
-        IdFixture = idFix;
+        idFix = idFixture;
         Fkequ = Fkequipo;
         equLoc = equipo_local;
         equVis = equipo_visitante;
