@@ -25,12 +25,12 @@
       </thead>
       <tbody>
         <tr>
-          @foreach (equipo item in ViewBag.Fixture1)
+          @foreach (fixture2 item in ViewBag.Fixture2)
         {
-        <td>@item.Id_Fixture2</td> 
+        <td>@item.IdFixture2</td> 
         <td>@item.equipo_local2</td> 
         <td>@item.equipo_visitante2</td> 
-        <td>@item.fecha_juego2, @Hira_Partido2</td>
+        <td>@item.fecha_juego2, @item.Hira_Partido2</td>
         }
         
         </tr>

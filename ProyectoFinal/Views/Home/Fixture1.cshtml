@@ -24,16 +24,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          @foreach (equipo item in ViewBag.Fixture1)
+        
+          @foreach (fixture item in ViewBag.Fixture1)
         {
-        <td>@item.Id_Fixture</td> 
+          <tr>
+        <td>@item.IdFixture</td> 
         <td>@item.equipo_local</td> 
         <td>@item.equipo_visitante</td> 
-        <td>@item.fecha_juego, @Hora_Partido</td>
+        <td>@item.fecha_juego, @item.Hora_Partido</td>
+        </tr>
+        
         }
         
-        </tr>
+        
       </tbody>
       <tfoot>
         <tr>

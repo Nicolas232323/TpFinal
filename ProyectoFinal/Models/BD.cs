@@ -7,6 +7,9 @@ public static class BD
     private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Trusted_Connection=True;";
     
   static List<equipo> _listadoEquipos = new List<equipo>();
+ 
+ static List<fixture> _listadoFixture = new List<fixture>(); 
+ static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -29,39 +32,38 @@ public static List<equipo> ObtenerEquiposTablaLiga()
         }
         return _listadoEquipos;
     }
-    public static void ObtenerJugadores()
+    public static List<equipo> ObtenerJugadores()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
                 string sql = "SELECT * FROM jugador";
                 _listadoEquipos = db.Query<equipo>(sql).ToList();
         }
+        return _listadoEquipos;
+    }
+
+ public static List<fixture> ObtenerFixture1()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT * FROM Fixture";
+                _listadoFixture = db.Query<fixture>(sql).ToList();
+        }
+        return _listadoFixture;
+    }
+
+    public static List<fixture2> ObtenerFixture2()
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+                string sql = "SELECT * FROM Fixture2";
+                _listadoFixture2 = db.Query<fixture2>(sql).ToList();
+        }
+        return _listadoFixture2;
     }
 }
 
 /*
-    static List<Fixture1> _Fixture1 = new List<Fixture1>();
-    public static void ObtenerFixture1()
-    {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            string SQL = "Select * from Fixture";
-
-            return DB.Query<Fixture1>(SQL).ToList();
-        }
-    }
-
-    static List<Fixture2> _Fixture2 = new List<Fixture1>();
-    public static void ObtenerFixture2()
-    {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            string SQL = "Select * from Fixture2";
-
-            return DB.Query<Fixture2>(SQL).ToList();
-        }
-    }
-
      public static bool AgregarUsuario(Usuario us)
     {
         Usuario encontrado = null;
@@ -82,9 +84,6 @@ public static List<equipo> ObtenerEquiposTablaLiga()
         }
 }
 
-    internal static dynamic ObtenerEquiposPorId(object id_equipo)
-    {
-        throw new NotImplementedException();
-    }
 }
+
 */
