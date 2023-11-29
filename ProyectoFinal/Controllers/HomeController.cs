@@ -17,23 +17,20 @@ public class HomeController : Controller
 
   
 
-
-     public IActionResult Index()
+    public IActionResult Index()
+    {
+        return View();
+    }
+     public IActionResult TablaLigaAnual()
     {
 
         ViewBag.torneos = BD.ObtenerEquiposTablaLiga();
     
 
 
-        return View();
+        return View("TablaLigaAnual");
     }
-    /*
-    public IActionResult RegistroUsuario()
-    {
-        ViewBag.Usuario = BD.AgregarUsuario(Usuario usuario);
-        return 
-    }
-    */
+    
         public IActionResult MostrarEquipos()
     {
          ViewBag.Equipos = BD.ObtenerEquiposTablaLiga();
@@ -66,49 +63,47 @@ public IActionResult DetalleEquipo(int Id_equipo)
 
     return View("equipo");
 }
-
-
-
-
-
-}
-/*
-    public IActionResult AgarrarImagenesLocal()
+[HttpPost] public IActionResult Login(Usuario usuarioP)
     {
-
-        ViewBag.ImagenLocal = BD.ObtenerImagenesPorNombreLocal();
-    
-        return View();
+        Usuario nuevo = BD.loginUsuario(usuarioP);
+        if(nuevo == null)
+        {
+            ViewBag.error = "No existe el usuario";
+            return View("FormLogin");
+        }
+        return View("Bienvenida");
     }
 
-    public IActionResult AgarrarImagenesVisitante()
+    public IActionResult LoginForm()
     {
+        return View("FormLogin");
+    }
 
-        ViewBag.ImagenVisitante = BD.ObtenerImagenesPorNombreVisitante();
-    
-        return View();
+    [HttpPost] public IActionResult Registrar(Usuario usuarioP)
+    {
+        BD.agregarUsuario(usuarioP);
+        return View("FormLogin");
+    }
+
+    public IActionResult registrarForm()
+    {
+        return View("FormRegistrar");
+    }
+
+    [HttpPost] public IActionResult olvideMiContra(Usuario usuarioP)
+    {
+        string str = BD.olvideMiContraseña(usuarioP);
+        ViewBag.mail = usuarioP.Email;
+        ViewBag.Contraseña = str;
+        return View("olvidemiContra");
+    }
+
+    public IActionResult olvideMiContraForm()
+    {
+        return View("olvideMiContraForm");
     }
 
 
-    public IActionResult AgarrarImagenesLocal2()
-    {
-
-        ViewBag.ImagenLocal2 = BD.ObtenerImagenesPorNombreLocal2();
-    
-        return View();
-    }
-
-    public IActionResult AgarrarImagenesVisitante2()
-    {
-
-        ViewBag.ImagenVisitante2 = BD.ObtenerImagenesPorNombreVisitante2();
-    
-        return View();
-    }
-
-
-    
- 
     public IActionResult Privacy()
     {
         return View();
@@ -119,5 +114,5 @@ public IActionResult DetalleEquipo(int Id_equipo)
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
 }
-*/

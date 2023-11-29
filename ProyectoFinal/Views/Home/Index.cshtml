@@ -1,31 +1,13 @@
-﻿
-<table class="table-table-striped" style="background: transparent;"> 
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Equipo</th>
-            <th>PTS</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PE</th>
-            <th>PP</th>
-            <th>DG</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (equipo item in ViewBag.torneos)
-        {
-            <tr>
-                <td>@item.IDequipo</td> 
-                <td>@item.Nombre_equipo</td> 
-                <td>@item.puntos_equipo</td> 
-                <td>@item.partido_jugados</td> 
-                <td>@item.partidos_ganados</td> 
-                <td>@item.partidos_empatados</td> 
-                <td>@item.partidos_perdidos</td> 
-                <td>@item.diferencia_de_gol</td> 
-                
-            </tr>
-        }
-    </tbody>
-</table>
+<body> 
+    <section>
+            <div>
+                <a class="buttonIndex" href='@Url.Action("registrarForm","Home")'> Registrarme </a>
+            </div>
+            <div>
+                <a class="buttonIndex" href='@Url.Action("LoginForm","Home")'> Login </a>
+            </div>
+            <div>
+                <a class="buttonIndex" href='@Url.Action("olvideMiContraForm","Home")'> olvide Mi Contraseña </a>
+            </div>
+    </section>
+</body>
