@@ -1,9 +1,10 @@
 <h2>Jugadores por Posición</h2>
 
+
 <div>
     <h3>Arqueros</h3>
     <ul>
-        @foreach (jugador item in ViewBag.Arqueros)
+        @foreach (jugador item in ViewBag.jugadoresArqueros)
         {
             <li>@item.nombreJugador</li>
         }
@@ -13,7 +14,7 @@
 <div>
     <h3>Defensores</h3>
     <ul>
-        @foreach (jugador item in ViewBag.Defensores)
+        @foreach (jugador item in ViewBag.jugadoresDefensores)
         {
             <li>@item.nombreJugador</li>
         }
@@ -23,7 +24,7 @@
 <div>
     <h3>Mediocampistas</h3>
     <ul>
-        @foreach (jugador item in ViewBag.Mediocampistas)
+        @foreach (jugador item in ViewBag.jugadoresMediocampistas)
         {
             <li>@item.nombreJugador</li>
         }
@@ -33,7 +34,7 @@
 <div>
     <h3>Delanteros</h3>
     <ul>
-        @foreach (jugador item in ViewBag.Delanteros)
+        @foreach (jugador item in ViewBag.jugadoresDelanteros)
         {
             <li>@item.nombreJugador</li>
         }

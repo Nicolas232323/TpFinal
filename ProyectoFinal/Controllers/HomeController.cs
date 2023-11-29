@@ -30,7 +30,7 @@ public class HomeController : Controller
     
         public IActionResult MostrarEquipos()
     {
-         ViewBag.Equipos = BD.ObtenerEquiposPorId(Id_equipo);
+         ViewBag.Equipos = BD.ObtenerEquiposTablaLiga();
 
          return View("equipos");
     }
@@ -49,14 +49,14 @@ public class HomeController : Controller
     }
 public IActionResult DetalleEquipo(int Id_equipo)
 {
+    ViewBag.nombreEquipo = BD.ObtenerEquiposPorId(Id_equipo);
     ViewBag.jugadoresPorPosicion = BD.ObtenerJugadores(Id_equipo);
+    ViewBag.jugadoresArqueros = BD.ObtenerJugadoresArqueros(Id_equipo);
+    ViewBag.jugadoresDefensores = BD.ObtenerJugadoresDefensores(Id_equipo);
+    ViewBag.jugadoresMediocampistas = BD.ObtenerJugadoresMediocampistas(Id_equipo);
+    ViewBag.jugadoresDelanteros = BD.ObtenerJugadoresDelanteros(Id_equipo);
 
-    var jugadoresPorPosicion = ViewBag.jugadoresPorPosicion as List<jugador>;
-
-    ViewBag.Arqueros = jugadoresPorPosicion.Where(j => j.pocision == "Arquero");
-    ViewBag.Defensores = jugadoresPorPosicion.Where(j => j.pocision == "Defensor");
-    ViewBag.Mediocampistas = jugadoresPorPosicion.Where(j => j.pocision == "Mediocampista");
-    ViewBag.Delanteros = jugadoresPorPosicion.Where(j => j.pocision == "Delantero");
+  
 
     return View("equipo");
 }

@@ -20,6 +20,7 @@ public static class BD
    static List<string> _listadoImagenesL2 = new List<string>(); 
 
   static List<string> _listadoImagenesV2 = new List<string>(); 
+   static List<jugador> _listadoJugadores = new List<jugador>();
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -33,24 +34,69 @@ public static List<equipo> ObtenerEquiposTablaLiga()
 }
 
 
-    public static List<equipo> ObtenerEquiposPorId(int Id_equipo)
+public static equipo ObtenerEquiposPorId(int Id_equipo)
+{
+    equipo equipoEncontrado;
+
+    using (SqlConnection db = new SqlConnection(_connectionString))
     {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-                string sql = "SELECT * FROM equipo";
-                _listadoEquipos = db.Query<equipo>(sql).ToList();
-        }
-        return _listadoEquipos;
+        string sql = "SELECT * FROM Equipo WHERE IDequipo = @ID";
+        equipoEncontrado = db.QueryFirstOrDefault<equipo>(sql, new { ID = Id_equipo });
     }
+
+    return equipoEncontrado;
+}
+
 public static List<equipo> ObtenerJugadores(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT * FROM jugador WHERE Fkequipo = @EquipoId";
+        string sql = "SELECT * FROM Jugador WHERE Fkequipo = @EquipoId";
         _listadoEquipos = db.Query<equipo>(sql, new { EquipoId = Id_equipo }).ToList();
     }
     return _listadoEquipos;
 }
+public static List<jugador> ObtenerJugadoresArqueros(int Id_equipo)
+{
+    using(SqlConnection db = new SqlConnection(_connectionString))
+    {
+        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Arquero' and Fkequipo = @EquipoId";
+        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+    }
+    return _listadoJugadores;
+}
+
+public static List<jugador> ObtenerJugadoresDefensores(int Id_equipo)
+{
+    using(SqlConnection db = new SqlConnection(_connectionString))
+    {
+        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Defensor' and Fkequipo = @EquipoId";
+        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+    }
+    return _listadoJugadores;
+}
+
+public static List<jugador> ObtenerJugadoresMediocampistas(int Id_equipo)
+{
+    using(SqlConnection db = new SqlConnection(_connectionString))
+    {
+        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Mediocampista' and Fkequipo = @EquipoId";
+        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+    }
+    return _listadoJugadores;
+}
+
+
+public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
+{
+    using(SqlConnection db = new SqlConnection(_connectionString))
+    {
+        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Delantero' and Fkequipo = @EquipoId";
+        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+    }
+    return _listadoJugadores;
+}
+
 
 
  public static List<fixture> ObtenerFixture1()

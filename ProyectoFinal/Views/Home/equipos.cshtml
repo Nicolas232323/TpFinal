@@ -16,14 +16,15 @@
     </div>
     <br>
     
-     @foreach (equipo item in ViewBag.Equipos)
-        {
-        <div class="equipo">
-        <a href='@Url.Action("DetalleEquipo")'>
-             <img src="@item.Image_equipo" alt="">
+  @foreach (equipo item in ViewBag.Equipos)
+{
+    <div class="equipo">
+        <a href='@Url.Action("DetalleEquipo", new { equipoId = item.IDequipo })'>
+            <img src="@item.Image_equipo" >
         </a>
         <span>@item.Nombre_equipo</span>  
-        </div>
-        }
+    </div>
+}
+
 
 
