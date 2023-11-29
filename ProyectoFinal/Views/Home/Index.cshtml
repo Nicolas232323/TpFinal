@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <body> 
     <section>
             <div>
@@ -11,3 +12,39 @@
             </div>
     </section>
 </body>
+=======
+﻿<body class="indexbody">
+
+<table class="table-table-striped" style="background: transparent;"> 
+    <thead class="IndexHead">
+        <tr>
+            <th>#</th>
+            <th>Equipo</th>
+            <th>PTS</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th>DG</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (equipo item in ViewBag.torneos)
+        {
+            <tr>
+                <td>@item.IDequipo</td> 
+                <td>@item.Nombre_equipo</td> 
+                <td>@item.puntos_equipo</td> 
+                <td>@item.partido_jugados</td> 
+                <td>@item.partidos_ganados</td> 
+                <td>@item.partidos_empatados</td> 
+                <td>@item.partidos_perdidos</td> 
+                <td>@item.diferencia_de_gol</td> 
+                
+            </tr>
+        }
+    </tbody>
+</table>
+
+</body>
+>>>>>>> 510c7988b1a93afb8a05ff2f3ea9f976b5e02b84

@@ -1,6 +1,6 @@
 public class jugador
 {
-    public string nombreJugador{get;set;}
+    public string nombre{get;set;}
     public int IDjugador{get;set;}
     public string pocision{get;set;}
     public string pais{get;set;}
@@ -11,7 +11,7 @@ public class jugador
     }
     public jugador(string nomJugador, int id_J, string pos, string nacionalidadP, int FK_Equipo)
     {
-        nombreJugador = nomJugador;
+        nombre = nomJugador;
         IDjugador = id_J;
         pocision = pos;
         pais = nacionalidadP;
