@@ -25,7 +25,7 @@ public class HomeController : Controller
     
 
 
-        return View("");
+        return View();
     }
     
         public IActionResult MostrarEquipos()
@@ -60,8 +60,16 @@ public IActionResult DetalleEquipo(int Id_equipo)
 
     return View("equipo");
 }
-
-
+public IActionResult AgregarComentario(Comentarios comentarioP)
+{
+    ViewBag.comentarioNuevo = BD.AgregarComentario(comentarioP);
+    return View("Comentarios");
+}
+public IActionResult VerComentarios()
+{
+    ViewBag.comentarioss = BD.ObtenerComentarios();
+    return View("Comentarios");
+}
     public IActionResult Privacy()
     {
         return View();

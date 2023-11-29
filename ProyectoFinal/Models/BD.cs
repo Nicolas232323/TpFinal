@@ -1,21 +1,18 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using Dapper;
+using Microsoft.AspNetCore.Mvc;
 namespace ProyectoFinal.Models;
 
 public static class BD
 {
-    private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Trusted_Connection=True;";
-    
-  static List<equipo> _listadoEquipos = new List<equipo>();
- 
- static List<fixture> _listadoFixture = new List<fixture>(); 
- static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
-
-
-   static List<jugador> _listadoJugadores = new List<jugador>();
-   static List<Usuario> _Usuarios = new List<Usuario>();
-
+private static string _connectionString = @"Server=DESKTOP-3ADJ3FA\SQLEXPRESS;DataBase=TpFinal;Trusted_Connection=True;";
+static List<equipo> _listadoEquipos = new List<equipo>();
+static List<fixture> _listadoFixture = new List<fixture>(); 
+static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
+static List<jugador> _listadoJugadores = new List<jugador>();
+static List<Comentarios> _listaComentarios = new List<Comentarios>();
+static List<Comentarios> _ListadoComentarios = new List<Comentarios>();
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
@@ -112,9 +109,25 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         }
         return _listadoFixture2;
     }
-
+    public static List<Comentarios> AgregarComentario(Comentarios comentarioP)
+    {
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "INSERT into Comentarios(comentario) values (@comentarioP)";
+            {
+                _listaComentarios = db.Query<Comentarios>(sql).ToList();
+            }
+        }
+        return _listaComentarios;
+    }
+    public static List<Comentarios> ObtenerComentarios()
+    {
+        
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT * FROM Comentarios";
+            _ListadoComentarios = db.Query<Comentarios>(sql).ToList();
+        }
+        return _ListadoComentarios;
+    }
 }
-
-
-
-
