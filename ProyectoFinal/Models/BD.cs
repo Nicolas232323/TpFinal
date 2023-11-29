@@ -113,40 +113,6 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         return _listadoFixture2;
     }
 
-
-    
-
-     public static void agregarUsuario(Usuario usuarioP)
-    {
-        string SQL = "INSERT INTO Usuario (NombreUsuario,Password) VALUES (@NombreUsuarioP,@ContraseñaP)";
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            db.Execute(SQL, new {NombreUsuarioP = usuarioP.NombreUsuario, ContraseñaP = usuarioP.Password});
-        }
-    }
-
-    public static Usuario loginUsuario(Usuario usuarioP)
-    {
-        Usuario obj = null;
-        string SQL ="SELECT * FROM Usuario where NombreUsuario = @NombreUsuarioP AND Password = @PasswordP";
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            obj = db.QueryFirstOrDefault<Usuario>(SQL, new {NombreUsuario = usuarioP.NombreUsuario, Password = usuarioP.Password});
-        }
-        return obj;
-    }
-
-    public static string olvideMiContraseña(Usuario usuarioP)
-    {
-        string contraseña = "";
-        string SQL = "SELECT Contraseña FROM Usuario where Email = @Email";
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            contraseña = db.QueryFirstOrDefault<string>(SQL, new {Email = usuarioP.Email});
-        }
-        return contraseña;
-    }
-
 }
 
 
