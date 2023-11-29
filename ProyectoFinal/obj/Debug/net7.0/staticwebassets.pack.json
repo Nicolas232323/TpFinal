@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\Thumbs.db"
     },
     {
+      "Id": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\copaliga.png",
+      "PackagePath": "staticwebassets\\copaliga.png"
+    },
+    {
       "Id": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
