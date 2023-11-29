@@ -12,15 +12,9 @@ public static class BD
  static List<fixture> _listadoFixture = new List<fixture>(); 
  static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
 
- static List<string> _listadoImagenesL = new List<string>(); 
 
-  static List<string> _listadoImagenesV = new List<string>(); 
-
-
-   static List<string> _listadoImagenesL2 = new List<string>(); 
-
-  static List<string> _listadoImagenesV2 = new List<string>(); 
    static List<jugador> _listadoJugadores = new List<jugador>();
+   static List<Usuario> _Usuarios = new List<Usuario>();
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -118,72 +112,43 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         }
         return _listadoFixture2;
     }
-}
+
+
+    
+
+     public static void agregarUsuario(Usuario usuarioP)
+    {
+        string SQL = "INSERT INTO Usuario (NombreUsuario,Password) VALUES (@NombreUsuarioP,@ContraseñaP)";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            db.Execute(SQL, new {NombreUsuarioP = usuarioP.NombreUsuario, ContraseñaP = usuarioP.Password});
+        }
+    }
+
+    public static Usuario loginUsuario(Usuario usuarioP)
+    {
+        Usuario obj = null;
+        string SQL ="SELECT * FROM Usuario where NombreUsuario = @NombreUsuarioP AND Password = @PasswordP";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            obj = db.QueryFirstOrDefault<Usuario>(SQL, new {NombreUsuario = usuarioP.NombreUsuario, Password = usuarioP.Password});
+        }
+        return obj;
+    }
 /*
-      public static List<string> ObtenerImagenesPorNombreLocal()
+    public static string olvideMiContraseña(Usuario usuarioP)
     {
+        string contraseña = "";
+        string SQL = "SELECT Contraseña FROM Usuario where Email = @Email";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture ON equipo.IDequipo = Fixture.Fkequipo WHERE Fixture.equipo_local =equipo.Nombre_equipo ";
-                _listadoImagenesL = db.Query<string>(sql).ToList();
+            contraseña = db.QueryFirstOrDefault<string>(SQL, new {Email = usuarioP.Email});
         }
-        return _listadoImagenesL;
+        return contraseña;
     }
-
-          public static List<string> ObtenerImagenesPorNombreVisitante()
-    {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture ON equipo.IDequipo = Fixture.Fkequipo WHERE Fixture.equipo_visitante =equipo.Nombre_equipo";
-                _listadoImagenesV = db.Query<string>(sql).ToList();
-        }
-        return _listadoImagenesV;
-    }
-
-
-    public static List<string> ObtenerImagenesPorNombreLocal2()
-    {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture2 ON equipo.IDequipo = Fixture2.Fkequipo2 WHERE Fixture2.equipo_local2 =equipo.Nombre_equipo ";
-                _listadoImagenesL2 = db.Query<string>(sql).ToList();
-        }
-        return _listadoImagenesL2;
-    }
-
-          public static List<string> ObtenerImagenesPorNombreVisitante2()
-    {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-                string sql = "SELECT Image_equipo FROM equipo INNER JOIN Fixture2 ON equipo.IDequipo = Fixture2.Fkequipo2 WHERE Fixture2.equipo_visitante2 =equipo.Nombre_equipo ";
-                _listadoImagenesV2 = db.Query<string>(sql).ToList();
-        }
-        return _listadoImagenesV2;
-    }
-
-}
-
-/*
-     public static bool AgregarUsuario(Usuario us)
-    {
-        Usuario encontrado = null;
-        string SQL = "INSERT INTO Usuarios(NombreUsuario, Password, Nombre, Email, Telefono, IdPregunta, Respuesta) VALUES (@pNombreUsuario, HASHBYTES('MD5',@pPassword), @pNombre, @pEmail, @pTelefono, @pIdPregunta, @pRespuesta)";
-        string SQL2 = "SELECT * FROM Usuarios WHERE NombreUsuario = @pNombreUsuario OR Email = @pEmail";
-        using (SqlConnection db = new SqlConnection(_connectionString))
-        {
-            encontrado = db.QueryFirstOrDefault<Usuario>(SQL2, new{ pNombreUsuario = us.NombreUsuario, pEmail = us.Email });
-            if (encontrado != null)
-            {
-                return false;
-            }
-            else
-            {
-                db.Execute(SQL, new { pNombreUsuario = us.NombreUsuario, pPassword = us.Password, pNombre = us.Nombre, pEmail = us.Email, pTelefono = us.Telefono, pIdPregunta = us.IdPregunta, pRespuesta = us.Respuesta });
-                return true;
-            }
-        }
-}
-
-}
-
 */
+}
+
+
+
+

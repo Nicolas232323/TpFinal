@@ -27,7 +27,12 @@ public class HomeController : Controller
 
         return View();
     }
-    
+    /*
+    public IActionResult RegistroUsuario()
+    {
+        ViewBag.Usuario = BD.AgregarUsuario(Usuario usuario);
+    }
+    */
         public IActionResult MostrarEquipos()
     {
          ViewBag.Equipos = BD.ObtenerEquiposTablaLiga();
@@ -102,14 +107,7 @@ public IActionResult DetalleEquipo(int Id_equipo)
 
 
     
-    //    public IActionResult TablasCopa()
- //   {
-      
-     //  ViewBag.equipos = BD.Equipos(); 
-    //    ViewBag.ultimosCampeones = BD.Campeonatos();
-      //  return View(Tablas);
-   // }
-
+ 
     public IActionResult Privacy()
     {
         return View();
