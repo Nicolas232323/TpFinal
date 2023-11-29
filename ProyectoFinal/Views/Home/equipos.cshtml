@@ -18,13 +18,12 @@
     
      @foreach (equipo item in ViewBag.Equipos)
         {
-    <div class="equipo">
-    
-            <img src="@item.Image_equipo" alt="">
-
-        @item.Nombre_equipo
-      
-        </div>     
+        <div class="equipo">
+        <a href='@Url.Action("DetalleEquipo")'>
+             <img src="@item.Image_equipo" alt="">
+        </a>
+        <span>@item.Nombre_equipo</span>  
+        </div>
         }
 
 

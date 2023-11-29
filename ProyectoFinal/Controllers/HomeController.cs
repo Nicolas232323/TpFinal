@@ -47,12 +47,24 @@ public class HomeController : Controller
 
          return View("Fixture2");
     }
-      public IActionResult DetalleEquipo(int Id_equipo)
-    {
-         ViewBag.Equipos = BD.ObtenerJugadores();
+public IActionResult DetalleEquipo(int Id_equipo)
+{
+    ViewBag.jugadoresPorPosicion = BD.ObtenerJugadores(Id_equipo);
 
-         return View("equipo");
-    }
+    var jugadoresPorPosicion = ViewBag.jugadoresPorPosicion as List<jugador>;
+
+    ViewBag.Arqueros = jugadoresPorPosicion.Where(j => j.pocision == "Arquero");
+    ViewBag.Defensores = jugadoresPorPosicion.Where(j => j.pocision == "Defensor");
+    ViewBag.Mediocampistas = jugadoresPorPosicion.Where(j => j.pocision == "Mediocampista");
+    ViewBag.Delanteros = jugadoresPorPosicion.Where(j => j.pocision == "Delantero");
+
+    return View("equipo");
+}
+
+
+
+
+
 }
 /*
     public IActionResult AgarrarImagenesLocal()

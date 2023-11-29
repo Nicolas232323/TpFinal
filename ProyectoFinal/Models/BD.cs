@@ -5,7 +5,7 @@ namespace ProyectoFinal.Models;
 
 public static class BD
 {
-    private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=DESKTOP-MMQE38N\SQLEXPRESS;DataBase=TpFinal;Trusted_Connection=True;";
     
   static List<equipo> _listadoEquipos = new List<equipo>();
  
@@ -42,15 +42,16 @@ public static List<equipo> ObtenerEquiposTablaLiga()
         }
         return _listadoEquipos;
     }
-    public static List<equipo> ObtenerJugadores()
+public static List<equipo> ObtenerJugadores(int Id_equipo)
+{
+    using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-                string sql = "SELECT * FROM jugador";
-                _listadoEquipos = db.Query<equipo>(sql).ToList();
-        }
-        return _listadoEquipos;
+        string sql = "SELECT * FROM jugador WHERE Fkequipo = @EquipoId";
+        _listadoEquipos = db.Query<equipo>(sql, new { EquipoId = Id_equipo }).ToList();
     }
+    return _listadoEquipos;
+}
+
 
  public static List<fixture> ObtenerFixture1()
     {

@@ -2,14 +2,14 @@ public class jugador
 {
     public string nombreJugador{get;set;}
     public int IDjugador{get;set;}
-    public int pocision{get;set;}
+    public string pocision{get;set;}
     public string pais{get;set;}
     public int Fkequipo{get;set;}
     public jugador()
     {
 
     }
-    public jugador(string nomJugador, int id_J, int pos, string nacionalidadP, int FK_Equipo)
+    public jugador(string nomJugador, int id_J, string pos, string nacionalidadP, int FK_Equipo)
     {
         nombreJugador = nomJugador;
         IDjugador = id_J;
