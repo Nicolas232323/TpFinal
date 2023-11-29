@@ -54,7 +54,7 @@ public static List<jugador> ObtenerJugadoresArqueros(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Arquero' and Fkequipo = @EquipoId";
+        string sql = "SELECT Jugador.nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Arquero' and  Jugador.Fkequipo = @EquipoId";
         _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
     return _listadoJugadores;
@@ -64,7 +64,7 @@ public static List<jugador> ObtenerJugadoresDefensores(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Defensor' and Fkequipo = @EquipoId";
+        string sql = "SELECT Jugador.nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Defensor' and  Jugador.Fkequipo = @EquipoId";
         _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
     return _listadoJugadores;
@@ -74,7 +74,7 @@ public static List<jugador> ObtenerJugadoresMediocampistas(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Mediocampista' and Fkequipo = @EquipoId";
+        string sql = "SELECT nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'MedioCampista' and  Jugador.Fkequipo = @EquipoId";
         _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
     return _listadoJugadores;
@@ -85,7 +85,7 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT pocision FROM Jugador WHERE pocision = 'Delantero' and Fkequipo = @EquipoId";
+        string sql = "SELECT Jugador.nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Delantero' and  Jugador.Fkequipo =@EquipoId";
         _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
     return _listadoJugadores;

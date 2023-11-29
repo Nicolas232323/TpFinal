@@ -1,6 +1,6 @@
 html {
   font-size: 14px;
-background-image: url('/img/pasto.webp');
+
 }
 
 @media (min-width: 768px) {
@@ -9,7 +9,7 @@ background-image: url('/img/pasto.webp');
   }
 }
 
-
+.bodyequipos{background-color: #429931;}
 
 html {
   position: relative;
@@ -31,6 +31,9 @@ td,th {
 
 
 }
+
+.indexbody{background-color: #429931;}
+
 h1{
   text-align:center;
   font-family: fantasy;
@@ -173,13 +176,46 @@ img{
 .index th:nth-child(7){width: 12.5%;}
 .index th:nth-child(8){width: 12.5%;}
 
+.table-table-striped {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
 
-table {
+.IndexHead th:nth-child(1) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(2) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(3) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(4) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(5) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(6) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(7) {
+  width: 12.5%;
+}
+.IndexHead th:nth-child(8) {
+  width: 12.5%;
+}
+
+.tabla {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     border: 3px solid purple;
   }
+
+
   
   thead th:nth-child(1) {
     width: 25%;
@@ -259,12 +295,13 @@ tbody tr:nth-child(odd) {
     background-image: url(noise.png);
   }
   
-  table {
+  .tabla {
     background-color: #429931;
     width: 60%;
     margin: auto;
     
   }
+  .bodyequipo{background-color:#429931 ;}
 
 .copa_liga{width: 20%;}
 
@@ -282,5 +319,4 @@ tbody tr:nth-child(odd) {
   .container1 {
     position: relative;
   }
-
 
