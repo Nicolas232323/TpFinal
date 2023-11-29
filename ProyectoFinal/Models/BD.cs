@@ -14,6 +14,7 @@ public static class BD
 
 
    static List<jugador> _listadoJugadores = new List<jugador>();
+   static List<Usuario> _Usuarios = new List<Usuario>();
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
@@ -115,26 +116,39 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
 
     
 
-     public static bool AgregarUsuario(Usuario us)
+     public static void agregarUsuario(Usuario usuarioP)
     {
-        Usuario encontrado = null;
-        string SQL = "INSERT INTO Usuarios(NombreUsuario, Password, Nombre, Email, Telefono, IdPregunta, Respuesta) VALUES (@pNombreUsuario, HASHBYTES('MD5',@pPassword), @pNombre, @pEmail, @pTelefono, @pIdPregunta, @pRespuesta)";
-        string SQL2 = "SELECT * FROM Usuarios WHERE NombreUsuario = @pNombreUsuario OR Email = @pEmail";
-        using (SqlConnection db = new SqlConnection(_connectionString))
+        string SQL = "INSERT INTO Usuario (NombreUsuario,Password) VALUES (@NombreUsuarioP,@ContraseñaP)";
+        using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            encontrado = db.QueryFirstOrDefault<Usuario>(SQL2, new{ pNombreUsuario = us.NombreUsuario, pEmail = us.Email });
-            if (encontrado != null)
-            {
-                return false;
-            }
-            else
-            {
-                db.Execute(SQL, new { pNombreUsuario = us.NombreUsuario, pPassword = us.Password, pNombre = us.Nombre, pEmail = us.Email, pTelefono = us.Telefono, pIdPregunta = us.IdPregunta, pRespuesta = us.Respuesta });
-                return true;
-            }
+            db.Execute(SQL, new {NombreUsuarioP = usuarioP.NombreUsuario, ContraseñaP = usuarioP.Password});
         }
+    }
+
+    public static Usuario loginUsuario(Usuario usuarioP)
+    {
+        Usuario obj = null;
+        string SQL ="SELECT * FROM Usuario where NombreUsuario = @NombreUsuarioP AND Password = @PasswordP";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            obj = db.QueryFirstOrDefault<Usuario>(SQL, new {NombreUsuario = usuarioP.NombreUsuario, Password = usuarioP.Password});
+        }
+        return obj;
+    }
+/*
+    public static string olvideMiContraseña(Usuario usuarioP)
+    {
+        string contraseña = "";
+        string SQL = "SELECT Contraseña FROM Usuario where Email = @Email";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            contraseña = db.QueryFirstOrDefault<string>(SQL, new {Email = usuarioP.Email});
+        }
+        return contraseña;
+    }
+*/
 }
-}
+
 
 
 

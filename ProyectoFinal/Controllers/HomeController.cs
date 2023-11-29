@@ -27,11 +27,12 @@ public class HomeController : Controller
 
         return View();
     }
+    /*
     public IActionResult RegistroUsuario()
     {
         ViewBag.Usuario = BD.AgregarUsuario(Usuario usuario);
     }
-    
+    */
         public IActionResult MostrarEquipos()
     {
          ViewBag.Equipos = BD.ObtenerEquiposTablaLiga();
