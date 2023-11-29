@@ -157,6 +157,23 @@ img{
   margin-bottom: 10px;
 }
 
+.table-table-striped{
+  table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+
+.index th:nth-child(1){width: 12.5%;}
+.index th:nth-child(2){width: 12.5%;}
+.index th:nth-child(3){width: 12.5%;}
+.index th:nth-child(4){width: 12.5%;}
+.index th:nth-child(5){width: 12.5%;}
+.index th:nth-child(6){width: 12.5%;}
+.index th:nth-child(7){width: 12.5%;}
+.index th:nth-child(8){width: 12.5%;}
+
+
 table {
     table-layout: fixed;
     width: 100%;
@@ -248,6 +265,9 @@ tbody tr:nth-child(odd) {
     margin: auto;
     
   }
+
+.copa_liga{width: 20%;}
+
   caption {
     font-family: "Rock Salt", cursive;
     padding: 20px;
