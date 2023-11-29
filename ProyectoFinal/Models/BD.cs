@@ -135,7 +135,7 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         }
         return obj;
     }
-/*
+
     public static string olvideMiContraseña(Usuario usuarioP)
     {
         string contraseña = "";
@@ -146,7 +146,7 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         }
         return contraseña;
     }
-*/
+
 }
 
 

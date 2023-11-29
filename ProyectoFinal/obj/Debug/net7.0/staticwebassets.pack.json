@@ -9,27 +9,19 @@
       "PackagePath": "staticwebassets\\AFA-removebg-preview.png"
     },
     {
-      "Id": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\BaseDeDatos\\BASEDEDATOSTpFinal.sql",
-      "PackagePath": "staticwebassets\\BaseDeDatos\\BASEDEDATOSTpFinal.sql"
+      "Id": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\BaseDeDatos\\TpFinalBD.sql",
+      "PackagePath": "staticwebassets\\BaseDeDatos\\TpFinalBD.sql"
     },
     {
       "Id": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\Thumbs.db",
       "PackagePath": "staticwebassets\\Thumbs.db"
     },
     {
-<<<<<<< HEAD
-      "Id": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\copaliga.png",
-      "PackagePath": "staticwebassets\\copaliga.png"
-    },
-    {
-      "Id": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\css\\site.css",
-=======
       "Id": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\copaliga.png",
       "PackagePath": "staticwebassets\\copaliga.png"
     },
     {
       "Id": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\css\\site.css",
->>>>>>> af3a6da23168bad6123bf5cb077010ee0efe5d92
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {

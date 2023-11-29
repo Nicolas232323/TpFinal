@@ -31,6 +31,7 @@ public class HomeController : Controller
     public IActionResult RegistroUsuario()
     {
         ViewBag.Usuario = BD.AgregarUsuario(Usuario usuario);
+        return 
     }
     */
         public IActionResult MostrarEquipos()

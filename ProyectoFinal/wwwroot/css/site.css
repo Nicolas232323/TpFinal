@@ -1,6 +1,6 @@
 html {
   font-size: 14px;
-
+background-image: url('/img/pasto.webp');
 }
 
 @media (min-width: 768px) {
@@ -9,7 +9,7 @@ html {
   }
 }
 
-.bodyequipos{background-color: #429931;}
+
 
 html {
   position: relative;
@@ -31,9 +31,6 @@ td,th {
 
 
 }
-
-.indexbody{background-color: #429931;}
-
 h1{
   text-align:center;
   font-family: fantasy;
@@ -176,46 +173,13 @@ img{
 .index th:nth-child(7){width: 12.5%;}
 .index th:nth-child(8){width: 12.5%;}
 
-.table-table-striped {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple;
-}
 
-.IndexHead th:nth-child(1) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(2) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(3) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(4) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(5) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(6) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(7) {
-  width: 12.5%;
-}
-.IndexHead th:nth-child(8) {
-  width: 12.5%;
-}
-
-.tabla {
+table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     border: 3px solid purple;
   }
-
-
   
   thead th:nth-child(1) {
     width: 25%;
@@ -295,7 +259,7 @@ tbody tr:nth-child(odd) {
     background-image: url(noise.png);
   }
   
-  .tabla {
+  table {
     background-color: #429931;
     width: 60%;
     margin: auto;

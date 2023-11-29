@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "L1XZ0/nWioJypQ/p+L1DZgUbJuRQLZCZd42UY5w53G0=",
-=======
-  "Hash": "sEoxRkADYat38QWUxZ4W+Fzi6TipzDQ2jtIGQrGvb9E=",
->>>>>>> af3a6da23168bad6123bf5cb077010ee0efe5d92
+  "Hash": "tdpydNFIOq9O/r7WF9PGzAa+EyplmoU9WBTrkMgi8Ac=",
   "Source": "ProyectoFinal",
   "BasePath": "_content/ProyectoFinal",
   "Mode": "Default",
@@ -72,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\AFA-removebg-preview.png"
     },
     {
-      "Identity": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\BaseDeDatos\\BASEDEDATOSTpFinal.sql",
+      "Identity": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\BaseDeDatos\\TpFinalBD.sql",
       "SourceId": "ProyectoFinal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\",
       "BasePath": "_content/ProyectoFinal",
-      "RelativePath": "BaseDeDatos/BASEDEDATOSTpFinal.sql",
+      "RelativePath": "BaseDeDatos/TpFinalBD.sql",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -86,31 +82,10 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\BaseDeDatos\\BASEDEDATOSTpFinal.sql"
+      "OriginalItemSpec": "wwwroot\\BaseDeDatos\\TpFinalBD.sql"
     },
     {
-<<<<<<< HEAD
-      "Identity": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\copaliga.png",
-      "SourceId": "ProyectoFinal",
-      "SourceType": "Discovered",
-      "ContentRoot": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\",
-      "BasePath": "_content/ProyectoFinal",
-      "RelativePath": "copaliga.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\copaliga.png"
-    },
-    {
-      "Identity": "Z:\\GITPROBAR\\TpFinal\\ProyectoFinal\\wwwroot\\css\\site.css",
-=======
       "Identity": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\copaliga.png",
->>>>>>> af3a6da23168bad6123bf5cb077010ee0efe5d92
       "SourceId": "ProyectoFinal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\wwwroot\\",
