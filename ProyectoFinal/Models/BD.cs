@@ -77,5 +77,20 @@ public static List<jugador> ObtenerJugadores(int Id_equipo)
             return db.Query<Comentarios>(SP, commandType: CommandType.StoredProcedure).ToList();
         }
     }
-
+    public static List<TablaBgrupoA> ObtenerTablaGrupoA()
+    {
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string SP = "SP_ObtenerTablaGrupoA";
+            return db.Query<TablaBgrupoA>(SP, commandType: CommandType.StoredProcedure).ToList();
+        }
+    }
+    public static List<TablaBgrupoB> ObtenerTablaGrupoB()
+    {
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string SP = "SP_ObtenerTablaGrupoB";
+            return db.Query<TablaBgrupoB>(SP, commandType: CommandType.StoredProcedure).ToList();
+        }
+    }
 }
