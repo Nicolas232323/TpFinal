@@ -1,4 +1,4 @@
-<body>
+<body class="bodycoments">
 
     <form action='@Url.Action("AgregarComentario","Home")' method="post" class="AddComentario">
         <label for="comentario">Comentario:</label>
@@ -9,7 +9,7 @@
         @foreach (Comentarios item in ViewBag.Comentarios)
         {
             <tr>
-            <h1>Comentario Anonimo</h1>
+            <h3>Comentario Anonimo</h3>
                 <td>@item.comentario</td> 
             </tr>
         }

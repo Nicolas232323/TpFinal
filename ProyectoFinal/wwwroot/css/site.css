@@ -166,12 +166,8 @@ img{
   margin-bottom: 10px;
 }
 
-.table-table-striped{
-  table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid purple;
-}
+.bodyindex{ background-color:#429931 ;}
+
 
 .index th:nth-child(1){width: 12.5%;}
 .index th:nth-child(2){width: 12.5%;}
@@ -189,28 +185,28 @@ img{
   border: 3px solid purple;
 }
 
-.IndexHead th:nth-child(1) {
+.indexhead th:nth-child(1) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(2) {
+.indexhead th:nth-child(2) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(3) {
+.indexhead th:nth-child(3) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(4) {
+.indexhead th:nth-child(4) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(5) {
+.indexhead th:nth-child(5) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(6) {
+.indexhead th:nth-child(6) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(7) {
+.indexhead th:nth-child(7) {
   width: 12.5%;
 }
-.IndexHead th:nth-child(8) {
+.indexhead th:nth-child(8) {
   width: 12.5%;
 }
 
@@ -277,6 +273,8 @@ tfoot {
   color: white;
   text-shadow: 1px 1px 1px black;
 }
+
+.bodycoments{background-color:#429931 ;}
 
 thead th,
 tfoot th,

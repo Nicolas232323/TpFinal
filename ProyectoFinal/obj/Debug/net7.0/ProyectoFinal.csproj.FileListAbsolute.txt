@@ -400,3 +400,42 @@ C:\Users\PC NICO\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\scopedcss\projec
 C:\Users\PC NICO\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.CopyComplete
 C:\Users\PC NICO\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\PC NICO\Desktop\TpFinal\ProyectoFinal\obj\Debug\net7.0\ref\ProyectoFinal.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\appsettings.Development.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\appsettings.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\ProyectoFinal.staticwebassets.runtime.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\ProyectoFinal.exe
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\ProyectoFinal.deps.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\ProyectoFinal.runtimeconfig.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\ProyectoFinal.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\ProyectoFinal.pdb
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\Dapper.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\System.Data.SqlClient.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.AssemblyReference.cache
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfoInputs.cache
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.AssemblyInfo.cs
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.MvcApplicationPartsAssemblyInfo.cache
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cache
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.RazorAssemblyInfo.cs
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets\msbuild.ProyectoFinal.Microsoft.AspNetCore.StaticWebAssets.props
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets\msbuild.build.ProyectoFinal.props
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoFinal.props
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ProyectoFinal.props
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets.pack.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets.build.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\staticwebassets.development.json
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\scopedcss\bundle\ProyectoFinal.styles.css
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\scopedcss\projectbundle\ProyectoFinal.bundle.scp.css
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.csproj.CopyComplete
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\refint\ProyectoFinal.dll
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.pdb
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ProyectoFinal.genruntimeconfig.cache
+Z:\PROGRAMACIONYAESTA\TpFinal\ProyectoFinal\obj\Debug\net7.0\ref\ProyectoFinal.dll
