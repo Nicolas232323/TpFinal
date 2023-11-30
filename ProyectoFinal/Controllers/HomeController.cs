@@ -16,7 +16,7 @@ public class HomeController : Controller
     }
 
     public List<jugador> MostrarEquipoAjax(int idEquipo){    
-
+        ViewBag.Equipo = null;
         ViewBag.Equipo = BD.ObtenerJugadores(idEquipo);
         return ViewBag.Equipo;
     }

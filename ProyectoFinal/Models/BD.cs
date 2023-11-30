@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
 namespace ProyectoFinal.Models;
@@ -10,12 +11,6 @@ private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Tr
 static List<equipo> _listadoEquipos = new List<equipo>();
 static List<fixture> _listadoFixture = new List<fixture>(); 
 static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
-public static List<jugador> _listadoDelanteros = new List<jugador>();
-public static List<jugador> _listadoArqueros = new List<jugador>();
-public static List<jugador> _listadoDefensores = new List<jugador>();
-public static List<jugador> _listadoMediocampistas= new List<jugador>();
-static List<Comentarios> _listaComentarios = new List<Comentarios>();
-static List<Comentarios> _ListadoComentarios = new List<Comentarios>();
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
@@ -76,11 +71,11 @@ public static List<jugador> ObtenerJugadores(int Id_equipo)
     }
     public static List<Comentarios> ObtenerComentarios()
     {
-        
-        using(SqlConnection db = new SqlConnection(_connectionString))
+        using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT * FROM Comentarios";
-            return db.Query<Comentarios>(sql).ToList();
+            string SP = "SP_ObtenerComentarios";
+            return db.Query<Comentarios>(SP, commandType: CommandType.StoredProcedure).ToList();
         }
     }
+
 }

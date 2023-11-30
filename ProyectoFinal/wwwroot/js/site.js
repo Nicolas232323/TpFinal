@@ -10,6 +10,14 @@ function MostrarEquipo(IdE) {
             dataType: 'JSON',
             data: { IDequipo: IdE },
             success: function (response) {
+                $("#Arqueros").empty();
+                $("#Arqueros").append('<h2>Arqueros</h2>');
+                $("#Defensores").empty();
+                $("#Defensores").append('<h2>Defensores</h2>');
+                $("#Mediocampistas").empty();
+                $("#Mediocampistas").append('<h2>Mediocampistas</h2>');
+                $("#Delanteros").empty();
+                $("#Delanteros").append('<h2>Delanteros</h2>');
                 response.forEach(element => {
                     if(element.pocision == "Arquero"){
                         $("#Arqueros").append("<p>" + element.nombre + "</p>");
