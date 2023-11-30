@@ -47,27 +47,24 @@ public class HomeController : Controller
 
          return View("Fixture2");
     }
-public IActionResult DetalleEquipo(int Id_equipo)
+public IActionResult DetalleEquipo()
 {
-    ViewBag.nombreEquipo = BD.ObtenerEquiposPorId(Id_equipo);
-    ViewBag.jugadoresPorPosicion = BD.ObtenerJugadores(Id_equipo);
-    ViewBag.jugadoresArqueros = BD.ObtenerJugadoresArqueros(Id_equipo);
-    ViewBag.jugadoresDefensores = BD.ObtenerJugadoresDefensores(Id_equipo);
-    ViewBag.jugadoresMediocampistas = BD.ObtenerJugadoresMediocampistas(Id_equipo);
-    ViewBag.jugadoresDelanteros = BD.ObtenerJugadoresDelanteros(Id_equipo);
-
-  
-
+    ViewBag.jugadoresArqueros = BD._listadoArqueros;
+    ViewBag.jugadoresDefensores = BD._listadoDefensores;
+    ViewBag.jugadoresMediocampistas = BD._listadoMediocampistas;
+    ViewBag.jugadoresDelanteros = BD._listadoDelanteros;
     return View("equipo");
 }
 public IActionResult AgregarComentario(Comentarios comentarioP)
 {
-    ViewBag.comentarioNuevo = BD.AgregarComentario(comentarioP);
+    BD.AgregarComentario(comentarioP);
+    ViewBag.Comentarios = BD.ObtenerComentarios();
     return View("Comentarios");
 }
 public IActionResult VerComentarios()
 {
-    ViewBag.comentarioss = BD.ObtenerComentarios();
+    BD.ObtenerComentarios();
+    ViewBag.Comentarios = BD.ObtenerComentarios();
     return View("Comentarios");
 }
     public IActionResult Privacy()

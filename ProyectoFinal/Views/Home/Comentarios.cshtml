@@ -1,6 +1,6 @@
 <body>
 
-    <form action='@Url.Action("VerComentarios","Home")' method="post" class="FormLogin">
+    <form action='@Url.Action("AgregarComentario","Home")' method="post" class="AddComentario">
         <label for="comentario">Comentario:</label>
         <input type="text" id="comentario" name="comentario" required>
         <button type="submit">Publicar</button>
@@ -13,7 +13,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (Comentarios item in ViewBag.comentarioss)
+        @foreach (Comentarios item in ViewBag.Comentarios)
         {
             <tr>
                 <td>@item.comentario</td> 

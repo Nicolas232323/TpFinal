@@ -10,7 +10,10 @@ private static string _connectionString = @"Server=DESKTOP-3ADJ3FA\SQLEXPRESS;Da
 static List<equipo> _listadoEquipos = new List<equipo>();
 static List<fixture> _listadoFixture = new List<fixture>(); 
 static List<fixture2> _listadoFixture2 = new List<fixture2>(); 
-static List<jugador> _listadoJugadores = new List<jugador>();
+public static List<jugador> _listadoDelanteros = new List<jugador>();
+public static List<jugador> _listadoArqueros = new List<jugador>();
+public static List<jugador> _listadoDefensores = new List<jugador>();
+public static List<jugador> _listadoMediocampistas= new List<jugador>();
 static List<Comentarios> _listaComentarios = new List<Comentarios>();
 static List<Comentarios> _ListadoComentarios = new List<Comentarios>();
 public static List<equipo> ObtenerEquiposTablaLiga()
@@ -48,37 +51,37 @@ public static List<jugador> ObtenerJugadoresArqueros(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT Jugador.nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Arquero' and  Jugador.Fkequipo = @EquipoId";
-        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+        string sql = "SELECT nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Arquero' and  Jugador.Fkequipo = @EquipoId";
+        _listadoArqueros = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
-    return _listadoJugadores;
+    return _listadoArqueros;
 }
 public static List<jugador> ObtenerJugadoresDefensores(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT Jugador.nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Defensor' and  Jugador.Fkequipo = @EquipoId";
-        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+        string sql = "SELECT nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Defensor' and  Jugador.Fkequipo = @EquipoId";
+        _listadoDefensores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
-    return _listadoJugadores;
+    return _listadoDefensores;
 }
 public static List<jugador> ObtenerJugadoresMediocampistas(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
         string sql = "SELECT nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'MedioCampista' and  Jugador.Fkequipo = @EquipoId";
-        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+        _listadoMediocampistas = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
-    return _listadoJugadores;
+    return _listadoMediocampistas;
 }
 public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
     {
-        string sql = "SELECT Jugador.nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Delantero' and  Jugador.Fkequipo =@EquipoId";
-        _listadoJugadores = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
+        string sql = "SELECT nombre FROM Jugador inner join Equipo on Jugador.Fkequipo = Equipo.IDequipo where pocision = 'Delantero' and  Jugador.Fkequipo = @EquipoId";
+        _listadoDelanteros = db.Query<jugador>(sql, new { EquipoId = Id_equipo }).ToList();
     }
-    return _listadoJugadores;
+    return _listadoDelanteros;
 }
  public static List<fixture> ObtenerFixture1()
     {
@@ -98,16 +101,15 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         }
         return _listadoFixture2;
     }
-    public static List<Comentarios> AgregarComentario(Comentarios comentarioP)
+    public static void AgregarComentario(Comentarios ComentariosP)
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT into Comentarios(comentario) values (@comentarioP)";
+            string sql = "INSERT INTO Comentarios(comentario) values (@comentarioP)";
             {
-                _listaComentarios = db.Query<Comentarios>(sql).ToList();
+                db.Execute(sql, new{comentarioP = ComentariosP.comentario});
             }
         }
-        return _listaComentarios;
     }
     public static List<Comentarios> ObtenerComentarios()
     {
@@ -115,8 +117,7 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
             string sql = "SELECT * FROM Comentarios";
-            _ListadoComentarios = db.Query<Comentarios>(sql).ToList();
+            return db.Query<Comentarios>(sql).ToList();
         }
-        return _ListadoComentarios;
     }
 }
