@@ -20,7 +20,6 @@ public class HomeController : Controller
         ViewBag.Equipo = BD.ObtenerJugadores(idEquipo);
         return ViewBag.Equipo;
     }
-
    
      public IActionResult Index()
     {
