@@ -16,10 +16,10 @@
     </div>
     <br>
     
-  @foreach (equipo item in ViewBag.Equipos)
+  @foreach (var item in ViewBag.Equipos)
 {
     <div class="equipo">
-        <button type="button" data-bs-toggle="modal" data-bs-target="#ModalEquipo" onclick="MostrarEquipo(@item.IDequipo)"><img src="@item.Image_equipo"></button>
+        <button type="button" class="btn-equipo" data-bs-toggle="modal" data-bs-target="#ModalEquipo" onclick="MostrarEquipo(@item.IDequipo)"><img src="@item.Image_equipo"></button>
         <span>@item.Nombre_equipo</span>  
     </div>
 }

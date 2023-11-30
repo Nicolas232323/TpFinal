@@ -8,10 +8,10 @@
     <tbody>
         @foreach (Comentarios item in ViewBag.Comentarios)
         {
-            <tr>
-            <h3>Comentario Anonimo</h3>
-                <td>@item.comentario</td> 
-            </tr>
+            <div class="comentario">
+                <p><b>Anonimo:</b></p>
+                <p>@item.comentario</p> 
+            </div>
         }
     </tbody>
 </table>

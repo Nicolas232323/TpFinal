@@ -54,6 +54,7 @@ header {
 }
 .container{   position: relative;}
 .equipo {
+  display: flex;
   width: 13%;
   box-sizing: border-box;
   float: left;
@@ -62,10 +63,16 @@ header {
   background-color: #80cfe7;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   margin-top: 111px;
+  flex-direction: column;
+  transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.equipo:hover{
+  transform: scale(1.03);
+}
+
 
 .equipo img {
   max-width: 100%;
@@ -323,3 +330,54 @@ tbody tr:nth-child(odd) {
     position: relative;
   }
 
+.btn-equipo{
+  border: none;
+  background: none;
+}
+
+.comentario{
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.comentario p{
+  margin-bottom: 0 !important;
+  font-size: 1.2rem; 
+}
+
+.comentario b{
+  margin-right: 10px;
+}
+
+.AddComentario{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.AddComentario label{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.AddComentario button{
+  padding: 10px 20px;
+  border: none;
+  transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.AddComentario button:hover{
+  transform: scale(1.05);
+}
+
+#comentario{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 15px;
+}
