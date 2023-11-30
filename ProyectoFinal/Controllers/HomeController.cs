@@ -25,7 +25,7 @@ public class HomeController : Controller
     
 
 
-        return View("");
+        return View();
     }
     
         public IActionResult MostrarEquipos()
@@ -47,19 +47,18 @@ public class HomeController : Controller
 
          return View("Fixture2");
     }
-public IActionResult DetalleEquipo(int Id_equipo)
+public IActionResult DetalleEquipo(int equipoId) 
 {
-    ViewBag.nombreEquipo = BD.ObtenerEquiposPorId(Id_equipo);
-    ViewBag.jugadoresPorPosicion = BD.ObtenerJugadores(Id_equipo);
-    ViewBag.jugadoresArqueros = BD.ObtenerJugadoresArqueros(Id_equipo);
-    ViewBag.jugadoresDefensores = BD.ObtenerJugadoresDefensores(Id_equipo);
-    ViewBag.jugadoresMediocampistas = BD.ObtenerJugadoresMediocampistas(Id_equipo);
-    ViewBag.jugadoresDelanteros = BD.ObtenerJugadoresDelanteros(Id_equipo);
-
-  
+    ViewBag.nombreEquipo = BD.ObtenerEquiposPorId(equipoId);
+    ViewBag.jugadoresPorPosicion = BD.ObtenerJugadores(equipoId);
+    ViewBag.jugadoresArqueros = BD.ObtenerJugadoresArqueros(equipoId);
+    ViewBag.jugadoresDefensores = BD.ObtenerJugadoresDefensores(equipoId);
+    ViewBag.jugadoresMediocampistas = BD.ObtenerJugadoresMediocampistas(equipoId);
+    ViewBag.jugadoresDelanteros = BD.ObtenerJugadoresDelanteros(equipoId);
 
     return View("equipo");
 }
+
 
 
     public IActionResult Privacy()

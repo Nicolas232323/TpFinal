@@ -5,7 +5,7 @@ namespace ProyectoFinal.Models;
 
 public static class BD
 {
-    private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=DESKTOP-MMQE38N\SQLEXPRESS;DataBase=TpFinal;Trusted_Connection=True;";
     
   static List<equipo> _listadoEquipos = new List<equipo>();
  
@@ -14,7 +14,7 @@ public static class BD
 
 
    static List<jugador> _listadoJugadores = new List<jugador>();
-   static List<Usuario> _Usuarios = new List<Usuario>();
+  
 
 public static List<equipo> ObtenerEquiposTablaLiga()
 {
