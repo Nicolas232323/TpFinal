@@ -19,12 +19,37 @@
   @foreach (equipo item in ViewBag.Equipos)
 {
     <div class="equipo">
-        <a href='@Url.Action("DetalleEquipo", new { equipoId = item.IDequipo })'>
-            <img src="@item.Image_equipo" >
-        </a>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#ModalEquipo" onclick="MostrarEquipo(@item.IDequipo)"><img src="@item.Image_equipo"></button>
         <span>@item.Nombre_equipo</span>  
     </div>
 }
 
+
+<div class="modal fade" tabindex="-1" id="ModalEquipo" aria-labelledby="ModalEquipoTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="NombreJugadores">Jugadores</h3>
+        </div>
+        <div class="modal-body">
+            <div id="Arqueros">
+                <h2>Arqueros</h2>
+            </div>
+            <div id="Defensores">
+                <h2>Defensores</h2>
+            </div>
+            <div id="Mediocampistas">
+                <h2>Mediocampistas</h2>
+            </div>
+            <div id="Delanteros">
+                <h2>Delanteros</h2>  
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 

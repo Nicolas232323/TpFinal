@@ -15,7 +15,11 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-  
+    public List<jugador> MostrarEquipoAjax(int idEquipo){    
+
+        ViewBag.Equipo = BD.ObtenerJugadores(idEquipo);
+        return ViewBag.Equipo;
+    }
 
    
      public IActionResult Index()
@@ -47,30 +51,6 @@ public class HomeController : Controller
 
          return View("Fixture2");
     }
-<<<<<<< HEAD
-public IActionResult DetalleEquipo(int equipoId) 
-{
-    ViewBag.nombreEquipo = BD.ObtenerEquiposPorId(equipoId);
-    ViewBag.jugadoresPorPosicion = BD.ObtenerJugadores(equipoId);
-    ViewBag.jugadoresArqueros = BD.ObtenerJugadoresArqueros(equipoId);
-    ViewBag.jugadoresDefensores = BD.ObtenerJugadoresDefensores(equipoId);
-    ViewBag.jugadoresMediocampistas = BD.ObtenerJugadoresMediocampistas(equipoId);
-    ViewBag.jugadoresDelanteros = BD.ObtenerJugadoresDelanteros(equipoId);
-
-    return View("equipo");
-}
-
-
-
-=======
-public IActionResult DetalleEquipo()
-{
-    ViewBag.jugadoresArqueros = BD._listadoArqueros;
-    ViewBag.jugadoresDefensores = BD._listadoDefensores;
-    ViewBag.jugadoresMediocampistas = BD._listadoMediocampistas;
-    ViewBag.jugadoresDelanteros = BD._listadoDelanteros;
-    return View("equipo");
-}
 public IActionResult AgregarComentario(Comentarios comentarioP)
 {
     BD.AgregarComentario(comentarioP);
@@ -83,7 +63,6 @@ public IActionResult VerComentarios()
     ViewBag.Comentarios = BD.ObtenerComentarios();
     return View("Comentarios");
 }
->>>>>>> 8d58ca8a963db458707dd61bfbe8dbbfbee7247d
     public IActionResult Privacy()
     {
         return View();
