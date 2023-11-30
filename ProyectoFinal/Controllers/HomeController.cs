@@ -20,7 +20,16 @@ public class HomeController : Controller
         ViewBag.Equipo = BD.ObtenerJugadores(idEquipo);
         return ViewBag.Equipo;
     }
-   
+    public IActionResult ObtenerTablaGrupoAController()
+    {
+        ViewBag.TablaGrupoA = BD.ObtenerTablaGrupoA();
+        return ViewBag.TablaGrupoA;
+    }
+    public IActionResult ObtenerTablaGrupoBController()
+    {
+        ViewBag.TablaGrupoB = BD.ObtenerTablaGrupoB();
+        return ViewBag.TablaGrupoB;
+    }
      public IActionResult Index()
     {
 
