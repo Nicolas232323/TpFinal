@@ -2,6 +2,7 @@
 <table class="table-table-striped" style="background: transparent;"> 
     <thead class="indexhead">
         <tr>
+            <th> </th>
             <th>#</th>
             <th>Equipo</th>
             <th>PTS</th>
@@ -16,6 +17,7 @@
         @foreach (equipo item in ViewBag.torneos)
         {
             <tr>
+                <td><img src="@item.Image_equipo" class="ImagenFoto"></td>
                 <td>@item.IDequipo</td> 
                 <td>@item.Nombre_equipo</td> 
                 <td>@item.puntos_equipo</td> 
@@ -29,7 +31,7 @@
         }
     </body>
 </table>
-<button type="button" data-bs-toggle="modal" data-bs-target="#ModalTablaA" onclick="MostrarTablaGrupoA()"><h1>Equipos Grupo A Primera Nacional</h1></button>
+<button type="button" data-bs-toggle="modal" data-bs-target="#ModalTablaA" onclick="MostrarTablaGrupoA()"><h1>Grupo A Primera Nacional</h1></button>
 
 <div class="modal fade" tabindex="-1" id="ModalTablaA" aria-labelledby="ModalTablaATitle" aria-hidden="true">
     <div class="modal-dialog">
@@ -50,7 +52,7 @@
   </div>
 
 
-<button type="button" data-bs-toggle="modal" data-bs-target="#ModalTablaB" onclick="MostrarTablaGrupoB()"><h1>Equipos Grupo B Primera Nacional</h1></button>
+<button type="button" data-bs-toggle="modal" data-bs-target="#ModalTablaB" onclick="MostrarTablaGrupoB()"><h1>Grupo B Primera Nacional</h1></button>
 
 <div class="modal fade" tabindex="-1" id="ModalTablaB" aria-labelledby="ModalTablaBTitle" aria-hidden="true">
     <div class="modal-dialog">

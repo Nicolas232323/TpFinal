@@ -18655,11 +18655,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\47805665\\Desktop\\TpFinal-1\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

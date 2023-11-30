@@ -169,14 +169,7 @@ img{
 .bodyindex{ background-color:#429931 ;}
 
 
-.index th:nth-child(1){width: 12.5%;}
-.index th:nth-child(2){width: 12.5%;}
-.index th:nth-child(3){width: 12.5%;}
-.index th:nth-child(4){width: 12.5%;}
-.index th:nth-child(5){width: 12.5%;}
-.index th:nth-child(6){width: 12.5%;}
-.index th:nth-child(7){width: 12.5%;}
-.index th:nth-child(8){width: 12.5%;}
+
 
 .table-table-striped {
   table-layout: fixed;
@@ -186,29 +179,35 @@ img{
 }
 
 .indexhead th:nth-child(1) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(2) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(3) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(4) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(5) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(6) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(7) {
-  width: 12.5%;
+  width: 11%;
 }
 .indexhead th:nth-child(8) {
-  width: 12.5%;
+  width: 11%;
 }
+.indexhead th:nth-child(9) {
+  width: 11%;
+}
+
+.ImagenFoto{width: 25%;}
+
 
 .tabla {
     table-layout: fixed;
