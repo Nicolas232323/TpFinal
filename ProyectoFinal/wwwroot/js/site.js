@@ -44,14 +44,26 @@ function MostrarTablaGrupoA() {
             dataType: 'JSON',
             data: {},
             success: function (response) {
+                $("#NombreEquipo").empty();
                 response.forEach(element => {
-                    if(element.pocision == "NombreEquipo"){
-                        $("#NombreEquipo").append("<p>" + response.NombreEquipo + "</p>");
-                    }
-                    if (element.pocision == "puntos") {
-                        $("#Puntos").append("<p>" + response.puntos + "</p>");
-                    
-                }});
+                        $("#NombreEquipo").append("<p>" + element.nombreEquipo + "</p>");
+                });
+                
+                }
+        });
+}
+function MostrarTablaGrupoB() {
+    $.ajax(
+        {
+            url: '/Home/ObtenerTablaGrupoBController',
+            type: 'POST',
+            dataType: 'JSON',
+            data: {},
+            success: function (response) {
+                $("#NombreEquipoB").empty();
+                response.forEach(element => {
+                        $("#NombreEquipoB").append("<p>" + element.nombreEquipo + "</p>");
+                });
                 
                 }
         });

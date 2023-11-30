@@ -20,13 +20,15 @@ public class HomeController : Controller
         ViewBag.Equipo = BD.ObtenerJugadores(idEquipo);
         return ViewBag.Equipo;
     }
-    public IActionResult ObtenerTablaGrupoAController()
+    public List<TablaBgrupoA> ObtenerTablaGrupoAController()
     {
+        ViewBag.TablaGrupoA = null;
         ViewBag.TablaGrupoA = BD.ObtenerTablaGrupoA();
         return ViewBag.TablaGrupoA;
     }
-    public IActionResult ObtenerTablaGrupoBController()
+    public List<TablaBgrupoB> ObtenerTablaGrupoBController()
     {
+        ViewBag.TablaGrupoB = null;
         ViewBag.TablaGrupoB = BD.ObtenerTablaGrupoB();
         return ViewBag.TablaGrupoB;
     }
