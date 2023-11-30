@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Downloads\\TpFinal\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\PC NICO\\Desktop\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PC NICO\\Desktop\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC NICO\\Desktop\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectName": "ProyectoFinal",
+        "projectPath": "C:\\Users\\PC NICO\\Desktop\\TpFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\PC NICO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC NICO\\Desktop\\TpFinal\\ProyectoFinal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC NICO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 8d58ca8a963db458707dd61bfbe8dbbfbee7247d
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -58,6 +75,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -66,7 +101,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+>>>>>>> 8d58ca8a963db458707dd61bfbe8dbbfbee7247d
         }
       }
     }

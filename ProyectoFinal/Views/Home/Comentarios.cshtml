@@ -1,0 +1,24 @@
+<body>
+
+    <form action='@Url.Action("AgregarComentario","Home")' method="post" class="AddComentario">
+        <label for="comentario">Comentario:</label>
+        <input type="text" id="comentario" name="comentario" required>
+        <button type="submit">Publicar</button>
+    </form>
+    <table class="table-table-striped" style="background: transparent;"> 
+    <thead>
+        <tr>
+            <th>Anonimo</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Comentarios item in ViewBag.Comentarios)
+        {
+            <tr>
+                <td>@item.comentario</td> 
+            </tr>
+        }
+    </tbody>
+</table>
+</body>

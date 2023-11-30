@@ -47,6 +47,7 @@ public class HomeController : Controller
 
          return View("Fixture2");
     }
+<<<<<<< HEAD
 public IActionResult DetalleEquipo(int equipoId) 
 {
     ViewBag.nombreEquipo = BD.ObtenerEquiposPorId(equipoId);
@@ -61,6 +62,28 @@ public IActionResult DetalleEquipo(int equipoId)
 
 
 
+=======
+public IActionResult DetalleEquipo()
+{
+    ViewBag.jugadoresArqueros = BD._listadoArqueros;
+    ViewBag.jugadoresDefensores = BD._listadoDefensores;
+    ViewBag.jugadoresMediocampistas = BD._listadoMediocampistas;
+    ViewBag.jugadoresDelanteros = BD._listadoDelanteros;
+    return View("equipo");
+}
+public IActionResult AgregarComentario(Comentarios comentarioP)
+{
+    BD.AgregarComentario(comentarioP);
+    ViewBag.Comentarios = BD.ObtenerComentarios();
+    return View("Comentarios");
+}
+public IActionResult VerComentarios()
+{
+    BD.ObtenerComentarios();
+    ViewBag.Comentarios = BD.ObtenerComentarios();
+    return View("Comentarios");
+}
+>>>>>>> 8d58ca8a963db458707dd61bfbe8dbbfbee7247d
     public IActionResult Privacy()
     {
         return View();
