@@ -20,7 +20,6 @@ public static List<equipo> ObtenerEquiposTablaLiga()
         string sql = "SELECT * FROM Equipo";
         _listadoEquipos = db.Query<equipo>(sql).ToList();
     }
-
     return _listadoEquipos; 
 }
 
@@ -28,7 +27,6 @@ public static List<equipo> ObtenerEquiposTablaLiga()
 public static equipo ObtenerEquiposPorId(int Id_equipo)
 {
     equipo equipoEncontrado;
-
     using (SqlConnection db = new SqlConnection(_connectionString))
     {
         string sql = "SELECT * FROM Equipo WHERE IDequipo = @ID";
@@ -37,7 +35,6 @@ public static equipo ObtenerEquiposPorId(int Id_equipo)
 
     return equipoEncontrado;
 }
-
 public static List<equipo> ObtenerJugadores(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
@@ -56,7 +53,6 @@ public static List<jugador> ObtenerJugadoresArqueros(int Id_equipo)
     }
     return _listadoJugadores;
 }
-
 public static List<jugador> ObtenerJugadoresDefensores(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
@@ -66,7 +62,6 @@ public static List<jugador> ObtenerJugadoresDefensores(int Id_equipo)
     }
     return _listadoJugadores;
 }
-
 public static List<jugador> ObtenerJugadoresMediocampistas(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
@@ -76,8 +71,6 @@ public static List<jugador> ObtenerJugadoresMediocampistas(int Id_equipo)
     }
     return _listadoJugadores;
 }
-
-
 public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
 {
     using(SqlConnection db = new SqlConnection(_connectionString))
@@ -87,9 +80,6 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
     }
     return _listadoJugadores;
 }
-
-
-
  public static List<fixture> ObtenerFixture1()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
@@ -99,7 +89,6 @@ public static List<jugador> ObtenerJugadoresDelanteros(int Id_equipo)
         }
         return _listadoFixture;
     }
-
     public static List<fixture2> ObtenerFixture2()
     {
         using(SqlConnection db = new SqlConnection(_connectionString))
