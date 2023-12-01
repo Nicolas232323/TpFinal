@@ -2,7 +2,6 @@
 <table class="table-table-striped" style="background: transparent;"> 
     <thead class="indexhead">
         <tr>
-            <th> </th>
             <th>#</th>
             <th>Equipo</th>
             <th>PTS</th>
@@ -17,9 +16,8 @@
         @foreach (var item in ViewBag.torneos)
         {
             <tr>
-                <td><img src="@item.Image_equipo" class="ImagenFoto"></td>
                 <td>@item.IDequipo</td> 
-                <td>@item.Nombre_equipo</td> 
+                <td><img src="@item.Image_equipo" class="ImagenFoto">@item.Nombre_equipo</td> 
                 <td>@item.puntos_equipo</td> 
                 <td>@item.partido_jugados</td> 
                 <td>@item.partidos_ganados</td> 
