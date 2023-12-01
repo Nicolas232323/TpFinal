@@ -7,7 +7,7 @@ namespace ProyectoFinal.Models;
 
 public static class BD
 {
-private static string _connectionString = @"Server=LocalHost;DataBase=TpFinal;Trusted_Connection=True;";
+private static string _connectionString = @"Server=DESKTOP-3ADJ3FA\SQLEXPRESS;DataBase=TpFinal;Trusted_Connection=True;";
 static List<equipo> _listadoEquipos = new List<equipo>();
 static List<fixture> _listadoFixture = new List<fixture>(); 
 static List<fixture2> _listadoFixture2 = new List<fixture2>(); 

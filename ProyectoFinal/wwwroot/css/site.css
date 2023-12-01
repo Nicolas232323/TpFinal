@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
   font-size: 14px;
-
 }
 
 @media (min-width: 768px) {
@@ -13,12 +14,12 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bodyequipos{background-color: #429931;}
 
 html {
-  position: relative;
   min-height: 100%;
 }
 
@@ -28,14 +29,11 @@ body {
 
 td,th {
   padding-left: 50px ; 
-  
 }
+
 .container {
   font-family: Arial, sans-serif;
   background-color: #429931;
-
-
-
 }
 
 .indexbody{background-color: #429931;}
@@ -380,4 +378,14 @@ tbody tr:nth-child(odd) {
   border-radius: 5px;
   border: none;
   margin-left: 15px;
+}
+
+.imagenloca img{
+  width: 100px;
+}
+
+.container-fluid{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
